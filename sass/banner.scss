@@ -1,0 +1,67 @@
+.banner {
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+
+    &__title {
+        position: absolute;
+        left: 5vw;
+        top: 15vh;
+
+        h2 {
+            color: white;
+            font-family: 'Kanit';
+            text-shadow: 2px 2px black;
+            line-height: 5rem;
+            font-weight: 700;
+
+            @media screen and (max-width:766px) {
+                line-height: 3rem;
+            }
+
+            // font-size: 3.5rem;
+            &.first {
+                font-size: 4.5rem;
+                color: #30abfc;
+
+                @media screen and (max-width:766px) {
+                    font-size: 3rem;
+                }
+            }
+
+            &.second {
+                font-size: 5rem;
+                color: #30abfc;
+
+                @media screen and (max-width:766px) {
+                    font-size: 3rem;
+                }
+            }
+
+            &.third {
+                font-size: 5.2rem;
+                color: #f7bb2e;
+
+                @media screen and (max-width:766px) {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width:766px) {
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
