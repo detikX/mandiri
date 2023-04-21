@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium&family=Alkatra:wght@400;700&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
 @import 'banner';
 @import 'pembukaan';
+@import 'data';
 
 main,
 body {
@@ -148,8 +149,9 @@ section {
     padding: 32px 0;
     min-height: 100vh;
 
-    // position: relative;
-    // z-index: 8;
+    position: relative;
+    z-index: 8;
+
     p,
     div {
         font-size: 1.2rem;
