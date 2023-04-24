@@ -37,6 +37,7 @@
                 padding: 8px;
                 color: #ddd;
                 box-shadow: 1px 2px 2px #f39200;
+                // box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
                 background: #002750;
                 border-radius: 8px;
             }
@@ -46,8 +47,14 @@
                 margin-left: 16px;
                 width: 50%;
 
+                .nama {
+                    // font-weight: bold;
+                }
+
                 .title {
                     font-size: 1rem;
+                    color: #dbc851;
+
                 }
             }
 
@@ -69,7 +76,12 @@
         .logo {
             width: 320px;
             height: auto;
+
             // margin: 0 auto;
+            @media screen and (max-width:766px) {
+                width: 50%;
+                margin: 0 auto;
+            }
 
             img {
                 width: 100%;
