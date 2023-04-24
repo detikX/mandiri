@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium&family=Alkatra:wght@400;700&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
 @import 'banner';
 @import 'pembukaan';
 @import 'data';
@@ -186,4 +186,14 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.bg-trsp-white {
+    background: rgba($color: white, $alpha: .07);
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    p {
+        margin-bottom: 0;
+    }
 }
