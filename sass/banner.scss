@@ -3,6 +3,17 @@
     height: 100%;
     padding: 0;
     z-index: 9;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20vh;
+        background: linear-gradient(to top, #002750, transparent);
+    }
 
     &__title {
         position: absolute;
