@@ -65,6 +65,59 @@
         position: relative;
         z-index: 8;
 
+        .balok {
+            display: block;
+            margin-top: 3rem;
+            // background: rgba($color: white, $alpha: .2);
+            padding: 24px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 60%;
+                margin: 0 auto;
+                z-index: 1;
+                background: rgba(255, 255, 255, .7);
+            }
+
+            .isi {
+                display: block;
+                z-index: 9;
+                padding: 16px;
+                position: relative;
+                // position: absolute;
+                background: rgba($color: #124377, $alpha: .8);
+                width: 75%;
+                margin: 0 auto 24px;
+                // margin: 24px;
+
+                &__img,
+                &__isi {
+                    display: inline-block;
+                }
+
+                &__isi {
+                    color: white;
+
+                    width: 65%;
+                    vertical-align: top;
+                }
+
+                &__img {
+                    width: 160px;
+                    height: 160px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
         .image {
             position: absolute;
             inset: 0;
@@ -124,10 +177,11 @@
                 // font-size: 2rem;
                 padding: 8px;
                 color: #ddd;
-                box-shadow: 1px 2px 2px #f39200;
+                border: 1px solid #f7bb2e;
+                // box-shadow: 1px 2px 2px #f39200;
                 // box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
                 // background: rgba(#002750, .8);
-                background: linear-gradient(45deg, #002750, rgba(#002750, .5));
+                background: linear-gradient(45deg, #002750, rgba(#002750, .8));
                 border-radius: 8px;
             }
 
@@ -306,5 +360,15 @@
                 border-bottom: 1px solid transparent;
             }
         }
+    }
+}
+
+#myChart {
+    height: 520px;
+    position: relative;
+    z-index: 11;
+
+    @media screen and (max-width: 766px) {
+        height: 300px;
     }
 }
