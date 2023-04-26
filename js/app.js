@@ -9,3 +9,7 @@ $(document).on(action, 'li.question', function () {
     $('i').not(img).removeClass('rotate').css("transition", ".2s")
     img.toggleClass('rotate')
 })
+
+$(document).ready(function () {
+    AOS.init()
+})
