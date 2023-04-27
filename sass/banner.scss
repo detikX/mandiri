@@ -20,6 +20,11 @@
         left: 5vw;
         top: 15vh;
 
+        @media screen and (max-width:766px) {
+            top: initial;
+            bottom: 15vh;
+        }
+
         h2 {
             color: white;
             // font-family: 'Kanit';
@@ -35,7 +40,8 @@
             // font-size: 3.5rem;
             &.first {
                 font-size: 4.5rem;
-                color: #30abfc;
+                // color: #30abfc;
+                color: white;
 
                 @media screen and (max-width:766px) {
                     font-size: 3rem;
@@ -44,7 +50,8 @@
 
             &.second {
                 font-size: 5rem;
-                color: #30abfc;
+                // color: #30abfc;
+                color: white;
 
                 @media screen and (max-width:766px) {
                     font-size: 3rem;
