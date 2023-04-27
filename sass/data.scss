@@ -22,7 +22,26 @@
         font-weight: 700;
     }
 
-    &.perseroan {}
+    &.perseroan {
+        position: relative;
+
+
+        .imager {
+            &::before {
+                position: absolute;
+                content: "";
+                inset: 0;
+                background: linear-gradient(to bottom, #002750, transparent);
+            }
+
+            position: absolute;
+            inset: 0;
+        }
+
+        p {
+            color: white;
+        }
+    }
 
     &.fee {
         position: relative;
