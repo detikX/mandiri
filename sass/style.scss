@@ -193,7 +193,9 @@ section {
     padding: 8px 16px;
     border-radius: 8px;
 
-    p {
+    p,
+    blockquote {
         margin-bottom: 0;
+        color: white;
     }
 }

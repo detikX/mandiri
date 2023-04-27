@@ -25,6 +25,10 @@
     &.perseroan {
         position: relative;
 
+        blockquote {
+            font-family: 'Nunito Sans';
+        }
+
         .data__title {
             h3 {
                 color: #dbc851;
