@@ -1,3 +1,8 @@
+$(window).on("load", function () {
+    $(".preloader").fadeOut(10000);
+    $(".preloader").remove();
+});
+
 $(".answer").hide();
 var action = 'click';
 $(document).on(action, 'li.question', function () {

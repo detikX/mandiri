@@ -14,10 +14,14 @@
         right: 0;
         height: 20vh;
         background: linear-gradient(to top, #002750, transparent);
+
+        @media screen and (max-width:766px) {
+            background: transparent;
+        }
     }
 
     &__title {
-        position: absolute;
+        position: absolute !important;
         left: 5vw;
         top: 15vh;
 
@@ -75,6 +79,13 @@
         height: 100%;
         position: absolute;
         inset: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, #002750, transparent);
+        }
 
         @media screen and (max-width:766px) {
             height: 100vh;
