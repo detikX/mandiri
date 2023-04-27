@@ -31,11 +31,20 @@
                 position: absolute;
                 content: "";
                 inset: 0;
-                background: linear-gradient(to bottom, #002750, transparent);
+
+                background: linear-gradient(to bottom, #002750, transparent, #002750);
             }
 
             position: absolute;
             inset: 0;
+            width: 100%;
+            height: 100vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         p {
@@ -54,6 +63,13 @@
             width: 100%;
             height: 100%;
 
+            // &::before {
+            //     position: absolute;
+            //     content: "";
+            //     inset: 0;
+            //     background: linear-gradient(to top, #002750, transparent);
+            // }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -65,7 +81,7 @@
                 inset: 0;
                 z-index: 3;
                 position: absolute;
-                background: linear-gradient(to bottom, #002750, transparent);
+                background: linear-gradient(to bottom, #002750, transparent, #002750);
             }
 
             &::before {
