@@ -161,14 +161,16 @@
             width: fit-content;
             // padding: 4px 16px;
             position: relative;
+            margin: 0 auto;
 
             &::before {
                 content: "";
                 position: absolute;
                 bottom: -8px;
-                left: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 width: 20vw;
-                height: 2px;
+                height: 4px;
                 background: #ccc;
             }
         }
