@@ -25,6 +25,7 @@
     &.fee {
         position: relative;
         z-index: 1;
+        color: white;
 
         .image {
             position: absolute;
@@ -52,6 +53,10 @@
                 position: absolute;
                 background: rgba($color: #002750, $alpha: .8);
             }
+        }
+
+        p {
+            color: white;
         }
 
         .data__title {
