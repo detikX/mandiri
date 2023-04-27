@@ -22,6 +22,8 @@
         font-weight: 700;
     }
 
+    &.perseroan {}
+
     &.fee {
         position: relative;
         z-index: 1;
@@ -162,6 +164,7 @@
             // padding: 4px 16px;
             position: relative;
             margin: 0 auto;
+            text-align: center;
 
             &::before {
                 content: "";
