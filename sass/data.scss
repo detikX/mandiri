@@ -282,7 +282,18 @@
         color: white;
 
         @media screen and (max-width:766px) {
-            padding: 100px 0 32px;
+            padding: 0px 0 32px;
+        }
+
+        .imagev {
+            width: 260px;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
 
         .imagem {
