@@ -312,7 +312,7 @@
             }
 
             &.text5 {
-                width: 30%;
+                width: 45%;
 
                 @media screen and (max-width:766px) {
                     width: 35%;
@@ -720,4 +720,14 @@
             object-fit: cover;
         }
     }
+}
+
+.namaw {
+    // font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Kanit';
+}
+
+.titlew {
+    color: #f7bb2e;
 }
