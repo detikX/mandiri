@@ -300,9 +300,15 @@
             &.icons3 {
                 width: auto;
                 height: 150px;
+
+                @media screen and (max-width:766px) {
+                    height: 140px;
+                }
             }
 
             &.icons5 {
+                height: 80px;
+
                 @media screen and (max-width:766px) {
                     height: 100px;
                 }
@@ -310,7 +316,7 @@
 
             &.icons4 {
                 width: auto;
-                height: 130px;
+                height: 76px;
 
                 @media screen and (max-width:766px) {
                     height: 90px;
@@ -344,6 +350,7 @@
 
                 @media screen and (max-width:766px) {
                     line-height: 1.2rem;
+                    font-size: 1rem;
 
                 }
             }
@@ -735,9 +742,19 @@
     }
 
     .gelar {
-        display: inline-block;
-        margin-left: 16px;
+        // display: inline-block;
+        // margin-left: 16px;
         width: 50%;
+        margin: 8px auto;
+        text-align: center;
+
+        @media screen and (max-width:766px) {
+            display: inline-block;
+            margin: initial;
+            text-align: left;
+            width: 70%;
+            margin-left: 4px;
+        }
 
         .nama {
             // font-weight: bold;
@@ -752,13 +769,15 @@
 
     .img {
         width: 150px;
-        display: inline-block;
+        // display: inline-block;
         height: 150px;
+        margin: 0 auto;
         border-radius: 50%;
 
         @media screen and (max-width:766px) {
             width: 80px;
             height: 80px;
+            display: inline-block;
         }
 
         img {
