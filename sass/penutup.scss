@@ -1,6 +1,6 @@
 .penutup {
     background: #002750;
-    // min-height: auto;
+    min-height: auto;
     position: relative;
 
     .img {
@@ -18,23 +18,54 @@
     }
 
     .cardz {
-        background: rgba($color: white, $alpha: .1);
+        // background: rgba($color: white, $alpha: .1);
+        backdrop-filter: blur(4px);
         border-radius: 8px;
         padding: 16px;
         border: 2px solid white;
         color: white;
         position: relative;
         overflow: hidden;
-        height: 150px;
+        height: 180px;
+
+        .ceks {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            h4,
+            h3 {
+                margin: 0;
+            }
+        }
+
+        .imgk {
+            position: absolute;
+            right: 16px;
+            transform: rotate(90deg);
+            top: 16px;
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
 
         &::before {
             content: "";
             position: absolute;
-            left: -18%;
+            left: -25%;
             top: -28%;
             height: 100%;
             bottom: 0;
-            width: 73%;
+            width: 90%;
             overflow: hidden;
             transform: rotate(-45deg);
             background: rgba(255, 255, 255, .2);
