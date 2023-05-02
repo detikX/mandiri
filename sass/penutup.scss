@@ -1,0 +1,43 @@
+.penutup {
+    background: #002750;
+    // min-height: auto;
+    position: relative;
+
+    .img {
+        position: absolute;
+        inset: 0;
+        opacity: .3;
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .cardz {
+        background: rgba($color: white, $alpha: .1);
+        border-radius: 8px;
+        padding: 16px;
+        border: 2px solid white;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        height: 150px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20%;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            overflow: hidden;
+            transform: rotate(-45deg);
+            background: rgba($color: white, $alpha: .2);
+            // background: linear-gradient(-45deg, rgba(255, 255, 255, .3), transparent);
+        }
+    }
+}
