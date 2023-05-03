@@ -245,7 +245,7 @@
         .icons {
             width: auto;
             height: 132px;
-            display: inline-block;
+            // display: inline-block;
             vertical-align: middle;
             &.icons3 {
                 width: auto;
@@ -255,17 +255,17 @@
                 }
             }
             &.icons5 {
-                height: 80px;
-                @media screen and (max-width: 766px) {
-                    height: 100px;
-                }
+                // height: 80px;
+                // @media screen and (max-width: 766px) {
+                //     height: 100px;
+                // }
             }
             &.icons4 {
-                width: auto;
-                height: 76px;
-                @media screen and (max-width: 766px) {
-                    height: 90px;
-                }
+                // width: auto;
+                // height: 76px;
+                // @media screen and (max-width: 766px) {
+                //     height: 90px;
+                // }
             }
             img {
                 width: 100%;
@@ -274,8 +274,8 @@
             }
         }
         .text {
-            display: inline-block;
-            width: 50%;
+            // display: inline-block;
+            // width: 50%;
             vertical-align: middle;
             @media screen and (max-width: 766px) {
                 width: 50%;
