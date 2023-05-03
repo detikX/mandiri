@@ -556,8 +556,6 @@
     }
 }
 
-
-}
 #myChart {
     height: 520px;
     position: relative;
@@ -566,6 +564,7 @@
         height: 300px;
     }
 }
+
 .quotes-all {
     // margin-top: 32px;
     display: block;
@@ -594,7 +593,6 @@
             object-fit: contain;
         }
     }
-    
     .imaged {
         position: absolute;
         top: 8px;
@@ -608,7 +606,6 @@
             object-fit: contain;
         }
     }
-    
     .imaged1 {
         position: absolute;
         bottom: 8px;
@@ -622,7 +619,6 @@
             object-fit: contain;
         }
     }
-    
     .quotes {
         // display: inline-block;
         // margin-left: 16px;
@@ -649,7 +645,6 @@
         // background: linear-gradient(45deg, #002750, rgba(#002750, .8));
         border-radius: 8px;
     }
-    
     .gelar {
         // display: inline-block;
         // margin-left: 16px;
@@ -671,7 +666,6 @@
             color: #dbc851;
         }
     }
-    
     .img {
         width: 150px;
         // display: inline-block;
@@ -691,15 +685,18 @@
         }
     }
 }
+
 .namaw {
     // font-weight: bold;
     font-size: 1.3rem;
     font-family: 'Kanit';
 }
+
 .titlew {
     color: #f7bb2e;
     font-family: 'Nunito Sans';
 }
+
 .big {
     font-size: .75rem;
     margin-bottom: 0;
@@ -714,7 +711,6 @@
         margin: initial;
         margin-bottom: 4px;
     }
-    
     p {
         margin-bottom: 0;
     }
