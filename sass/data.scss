@@ -247,9 +247,12 @@
             height: 132px;
             // display: inline-block;
             vertical-align: middle;
+            @media screen and (max-width: 766px) {
+                display: inline-block;
+            }
             &.icons3 {
                 width: auto;
-                height: 150px;
+                // height: 150px;
                 @media screen and (max-width: 766px) {
                     height: 140px;
                 }
