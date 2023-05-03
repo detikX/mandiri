@@ -398,9 +398,11 @@
             font-weight: 700;
             text-align: center;
             color: #dbc851;
+            margin-top: 8px;
             @media screen and (max-width: 766px) {
                 display: inline-block;
                 margin: initial;
+                margin-top: 0;
                 margin-left: 8px;
                 text-align: left;
                 width: 50%;
@@ -694,4 +696,7 @@
     margin-bottom: 0;
     color: #b5b5b5;
     font-family: 'Montserrat';
+    p {
+        margin-bottom: 0;
+    }
 }
