@@ -692,10 +692,15 @@
 }
 
 .big {
-    font-size: 1.3rem;
+    font-size: .75rem;
     margin-bottom: 0;
-    color: #b5b5b5;
+    color: #04294e;
+    background: white;
     font-family: 'Montserrat';
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 8px;
+    border-radius: 8px;
     p {
         margin-bottom: 0;
     }
