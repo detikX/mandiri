@@ -7,7 +7,7 @@
     .img {
         position: absolute;
         inset: 0;
-        opacity: .3;
+        opacity: .1;
         width: 100%;
         height: auto;
         img {
@@ -15,6 +15,9 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+    hr {
+        background-color: rgba($color: white, $alpha: .3);
     }
     .font-bold {
         font-size: .875rem;
