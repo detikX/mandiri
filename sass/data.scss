@@ -241,6 +241,11 @@
         color: #ccc;
         .d-block {
             margin: 8px 0;
+            @media screen and (max-width: 766px) {
+                margin-bottom: 16px;
+                border-bottom: 1px solid rgba(255, 255, 255, .2);
+                padding-bottom: 8px;
+            }
         }
         .icons {
             width: auto;
