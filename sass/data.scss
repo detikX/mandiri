@@ -3,6 +3,12 @@
     z-index: 4;
     // font-family: 'Oxanium';
     background: #002750;
+    .bg-trsp-white {
+        background: rgba(255, 255, 255, 0.07);
+        padding: 8px 16px;
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+    }
     &__title {
         h3 {
             font-size: 3.5rem;
@@ -787,3 +793,28 @@
     // font-size: 1.5rem;
     color: white;
 }
+
+// .gimik {
+//     position: absolute;
+//     z-index: 1;
+//     &-one {
+//         position: absolute;
+//         right: -40%;
+//         bottom: 0;
+//         top: 30%;
+//         width: 50%;
+//         height: 100%;
+//         border: 2px dashed;
+//         &::before {
+//             content: "";
+//             border: 3px solid #002750;
+//             position: absolute;
+//             left: -1%;
+//             top: -1%;
+//             bottom: -1%;
+//             // border: 3px solid red;
+//             width: 50%;
+//             height: 102%
+//         }
+//     }
+// }
