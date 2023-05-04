@@ -277,6 +277,8 @@
             vertical-align: middle;
             @media screen and (max-width: 766px) {
                 display: inline-block;
+                margin: initial;
+                width: 130px;
             }
             &.icons3 {
                 width: auto;
@@ -309,7 +311,7 @@
             // width: 50%;
             vertical-align: middle;
             @media screen and (max-width: 766px) {
-                width: 50%;
+                width: 44%;
             }
             // p {
             //     font-family: 'Nunito Sans';
