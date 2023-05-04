@@ -870,3 +870,81 @@
 //         }
 //     }
 // }
+.tp {
+    height: 120px;
+}
+
+.batas {
+    position: relative;
+    // width: fit-content;
+    margin-top: 24px;
+    height: 100%;
+    // border-bottom: 1px solid red;
+    .th {
+        position: absolute;
+        bottom: -38px;
+        color: #dbc851;
+        font-family: 'Montserrat';
+    }
+    .harga {
+        position: absolute;
+        top: -32px;
+        left: -22px;
+        right: 0;
+        display: block;
+        color: #dbc851;
+        width: 124px;
+        // border: 1px solid;
+        font-family: 'Montserrat' !important;
+        .rp {
+            font-size: .7rem;
+            display: inline-block;
+        }
+        .nilai {
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+    }
+    @keyframes MoveUpDown2 {
+        0% {
+            height: 3px;
+            opacity: .3;
+        }
+        50% {
+            height: 50px;
+            opacity: 1;
+        }
+        60% {
+            height: 65px;
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+            height: 100px;
+        }
+        90% {
+            opacity: .3;
+            height: 100px;
+        }
+        95% {
+            opacity: .2;
+            height: 100px;
+        }
+        100% {
+            opacity: 0;
+            height: 100px;
+        }
+    }
+    .balokx {
+        position: absolute;
+        width: 60px;
+        height: 100px;
+        &__1 {
+            animation: MoveUpDown2 4s linear infinite;
+            height: 3px;
+            opacity: 0.3;
+            // transform: rotate(180deg);
+            background: #ddd;
+        }
+    }
+}
