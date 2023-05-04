@@ -135,7 +135,21 @@
         z-index: 8;
         .infog {
             display: inline-block;
-            width: 240px;
+            width: 300px;
+            vertical-align: middle;
+            height: 300px;
+            position: relative;
+            &__abs {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
             @media screen and (max-width: 766px) {
                 width: 240px;
                 margin: 0 auto;
@@ -151,6 +165,7 @@
         .infog-data {
             display: inline-block;
             color: white;
+            vertical-align: middle;
             width: 50%;
             @media screen and (max-width: 766px) {
                 width: 100%;
@@ -783,10 +798,19 @@
     // width: 320px;
     // height: auto;
     display: block;
+    padding: 4px 0 8px;
+    margin-bottom: 8px;
+    &.no {
+        border-bottom: 1px solid transparent !important;
+    }
+    border-bottom: 1px solid rgba($color: white, $alpha: .2);
     &__img {
         display: inline-block;
         width: 100px;
         height: auto;
+        @media screen and (max-width: 766px) {
+            width: 35%;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -797,6 +821,9 @@
         display: inline-block;
         width: 50%;
         margin-left: 8px;
+        @media screen and (max-width: 766px) {
+            width: 59%;
+        }
         img {
             width: 100%;
             height: 100%;
