@@ -3,7 +3,6 @@
 @import 'pembukaan';
 @import 'data';
 @import 'penutup';
-
 main,
 body {
     font-family: 'Oxanium', sans-serif;
@@ -22,14 +21,12 @@ body {
     // filter: blur(8px)
     // backdrop-filter: blur(8px);
     background: rgba($color: #000000, $alpha: 1);
-
     .waiting {
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 50%;
     }
-
     .animate {
         -webkit-animation-duration: 1.5s;
         animation-duration: 1.5s;
@@ -42,31 +39,24 @@ body {
         -webkit-animation-name: bounce;
         animation-name: bounce;
     }
-
     @-webkit-keyframes bounce {
-
         0%,
         100% {
             -webkit-transform: translateX(0);
         }
-
         50% {
             -webkit-transform: translateX(-10px);
         }
     }
-
     @keyframes bounce {
-
         0%,
         100% {
             transform: translateX(0);
         }
-
         50% {
             transform: translateX(-10px);
         }
     }
-
     .bounce {
         -webkit-animation-name: bounce;
         animation-name: bounce;
@@ -91,11 +81,9 @@ body {
     &-slide {
         margin: 0 16px;
     }
-
     &-list {
         margin: 0 -16px;
     }
-
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, 0.5);
@@ -104,13 +92,11 @@ body {
         // backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
-
         &:hover,
         &:focus,
         &:active {
             background: rgba(#87c3d3, .8);
         }
-
         &::before {
             font-family: "FontAwesome";
             z-index: 99;
@@ -118,30 +104,25 @@ body {
             color: white;
         }
     }
-
     &-next {
         right: -16px;
         // left: 0;
         // left: -15%;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f054";
         }
     }
-
     &-prev {
         // left: -20%;
         left: -16px;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f053";
         }
     }
-
     &-dots {
         li {
             button {
@@ -160,7 +141,6 @@ body {
 
 .isdesktop {
     display: block;
-
     @media screen and (max-width: 766px) {
         display: none;
     }
@@ -168,18 +148,16 @@ body {
 
 .ismobile {
     display: none;
-
     @media screen and (max-width: 766px) {
         display: block;
     }
 }
 
 #nav {
-    background: rgba(0, 120, 130, 0.5) !important;
+    background: rgba(#002750, 0.5) !important;
     z-index: 99 !important;
     backdrop-filter: blur(11px);
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         backdrop-filter: initial;
     }
 }
@@ -195,8 +173,7 @@ body {
 .share_icon>a i {
     font-size: 25px;
     line-height: initial;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         font-size: 16px !important;
         line-height: initial;
     }
@@ -211,14 +188,11 @@ section {
     // overflow-x: hidden;
     padding: 32px 0;
     min-height: 100vh;
-
     position: relative;
     z-index: 8;
-
     p,
     div {
         font-size: 1.2rem;
-
         @media screen and (max-width: 766px) {
             font-size: 1rem;
         }
@@ -230,23 +204,31 @@ section {
     z-index: 88;
 }
 
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -255,7 +237,6 @@ section {
     background: rgba($color: white, $alpha: .07);
     padding: 8px 16px;
     border-radius: 8px;
-
     p,
     blockquote {
         margin-bottom: 0;
