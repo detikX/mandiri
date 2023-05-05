@@ -574,18 +574,18 @@
         list-style-type: none;
         cursor: pointer;
         padding: 12px 16px;
-        font-size: 1.4rem !important;
+        font-size: 1rem !important;
         margin-bottom: 8px;
         font-family: 'Oxanium' !important;
         border-radius: 16px;
         // font-size: 14px;
-        line-height: initial !important;
+        line-height: 1.4 !important;
         color: #f7bb2e;
         background: rgba($color: #244179, $alpha: .4);
         border-bottom: 1px solid rgba(white, .5);
         span {
-            font-size: inherit !important;
-            line-height: initial !important;
+            font-size: 1.2rem !important;
+            line-height: 1.2rem !important;
         }
         &:hover,
         &:focus,
