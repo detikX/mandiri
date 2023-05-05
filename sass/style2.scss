@@ -170,6 +170,13 @@ body {
     z-index: 200 !important;
 }
 
+#search {
+    font-family: 'Montserrat' !important;
+    .s-result {
+        font-family: 'Montserrat' !important;
+    }
+}
+
 #share {
     z-index: 108;
     div {
