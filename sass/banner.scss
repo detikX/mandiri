@@ -1,6 +1,7 @@
 .banner {
     width: 100vw;
-    background: #002750;
+    // background: #002750;
+    background: #101823;
     height: 100%;
     padding: 0;
     z-index: 9;
@@ -8,14 +9,32 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        width: 467px;
+        height: 1233.79px;
         left: 0;
-        right: 0;
-        height: 20vh;
-        background: linear-gradient(to top, #002750, transparent);
+        top: -50%;
+        background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
+        filter: blur(100px);
+        border-radius: 233.5px;
+        transform: rotate(-54.37deg);
+        background: linear-gradient(45deg, #002750, transparent);
         @media screen and (max-width: 766px) {
             background: transparent;
         }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 400px;
+        overflow-y: hidden;
+        height: 930px;
+        right: -10%;
+        z-index: 9999;
+        top: -30%;
+        background: linear-gradient(180deg, #002750 0%, #002750 100%);
+        filter: blur(70px);
+        border-radius: 233.5px;
+        transform: rotate(65.71deg);
     }
     &__title {
         position: absolute !important;
@@ -28,7 +47,7 @@
         h2 {
             color: white;
             // font-family: 'Kanit';
-            font-family: 'Oxanium';
+            font-family: 'Aeonik Medium', sans-serif;
             text-shadow: 2px 2px black;
             line-height: 5rem;
             font-weight: 700;

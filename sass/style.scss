@@ -1,65 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Red+Hat+Display:wght@300&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
 @import 'banner';
 @import 'pembukaan';
 @import 'data';
-main,
-body {
-    font-family: 'Oxanium', sans-serif;
-    // font-family: 'Nunito Sans', sans-serif;
-    overflow-x: hidden;
+@font-face {
+    font-family: "Aeonik Medium";
+    src: url('../fonts/Aeonik-Medium.woff2');
+    src: url('../fonts/Aeonik-Medium.woff2') format('woff2');
 }
 
-.preloader {
-    position: fixed;
-    top: 0;
-    // display: none;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-    // filter: blur(8px)
-    // backdrop-filter: blur(8px);
-    background: rgba($color: #000000, $alpha: 1);
-    .waiting {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-    }
-    .animate {
-        -webkit-animation-duration: 1.5s;
-        animation-duration: 1.5s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-    }
-    @-webkit-keyframes bounce {
-        0%,
-        100% {
-            -webkit-transform: translateX(0);
-        }
-        50% {
-            -webkit-transform: translateX(-10px);
-        }
-    }
-    @keyframes bounce {
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX(-10px);
-        }
-    }
-    .bounce {
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-    }
+@font-face {
+    font-family: "Aeonik Regular";
+    src: url('../fonts/Aeonik-Regular.woff2');
+    src: url('../fonts/Aeonik-Regular.woff2') format('woff2');
+}
+
+main,
+body {
+    font-family: 'Aeonik Regular', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .firstletter {
