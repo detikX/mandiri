@@ -2,7 +2,7 @@
 @import 'variable';
 @import 'banner';
 @import 'pembukaan';
-@import 'data';
+@import 'datax';
 @font-face {
     font-family: "Aeonik Medium";
     src: url('../fonts/Aeonik-Medium.woff2');
@@ -148,6 +148,7 @@ section {
     padding: 32px 0;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
     z-index: 8;
     p,
     div {
@@ -201,4 +202,21 @@ section {
         margin-bottom: 0;
         color: white;
     }
+}
+
+.titlex {
+    font-family: 'Aeonik Medium', sans-serif;
+    font-weight: 700;
+    color: white;
+    // letter-spacing: 2px;
+    font-size: 3.5rem;
+    // text-shadow: 2px 2px $yellow;
+    @media screen and (max-width:766px) {
+        font-size: 2rem;
+    }
+}
+
+.highlights {
+    color: $yellow;
+    font-weight: 700;
 }

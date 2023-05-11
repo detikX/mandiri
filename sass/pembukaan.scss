@@ -3,19 +3,20 @@
     color: white;
     // min-height: auto;
     position: relative;
+    // padding: 72px 0 32px;
     z-index: 12;
     font-family: 'Red Hat Display', sans-serif;
     &::before {
         content: "";
         position: absolute;
-        width: 467px;
-        height: 1233.79px;
-        // left: 0;
-        top: -50%;
+        width: 200px;
+        height: 75vh;
+        top: 10vh;
         background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
         filter: blur(100px);
         border-radius: 233.5px;
         transform: rotate(-54.37deg);
+    
     }
     .imagez {
         position: absolute;
@@ -36,4 +37,6 @@
             object-fit: cover;
         }
     }
+
+
 }
