@@ -1,3 +1,22 @@
 .medi {
     background: $darkblue;
+    position: relative;
+    .angka {
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        height: 100%;
+        opacity: .1;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, $darkblue, transparent, $darkblue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
