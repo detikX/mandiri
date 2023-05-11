@@ -224,3 +224,19 @@ section {
     color: $yellow;
     font-weight: 700;
 }
+
+
+.footerm {
+    display: none;
+    @media screen and (max-width:766px) {
+        position: fixed;
+        height: 46px;
+        width: 100%;
+        background: #bbb;
+        z-index: 999;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
