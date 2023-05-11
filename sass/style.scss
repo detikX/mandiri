@@ -3,6 +3,7 @@
 @import 'banner';
 @import 'pembukaan';
 @import 'datax';
+@import 'medi';
 @font-face {
     font-family: "Aeonik Medium";
     src: url('../fonts/Aeonik-Medium.woff2');
@@ -211,8 +212,10 @@ section {
     // letter-spacing: 2px;
     font-size: 3.5rem;
     // text-shadow: 2px 2px $yellow;
+    line-height: 4rem;
     @media screen and (max-width:766px) {
         font-size: 2rem;
+        line-height: 2.2rem;
     }
 }
 
