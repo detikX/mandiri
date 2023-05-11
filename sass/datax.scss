@@ -28,6 +28,10 @@
 
     .icon {
         position: absolute;
+        @media screen and (max-width:766px) {
+            width: 10vw !important;
+            // height: 30px;
+        }
         &-left {
             // position: absolute;
             left: 10vw;
