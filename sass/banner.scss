@@ -28,22 +28,22 @@
         z-index: 11;
         background: linear-gradient(to top, #101823, transparent);
     }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 467px;
-        height: 1233.79px;
-        left: 0;
-        top: -50%;
-        // background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
-        filter: blur(100px);
-        border-radius: 233.5px;
-        transform: rotate(-54.37deg);
-        background: linear-gradient(45deg, #002750, transparent);
-        @media screen and (max-width: 766px) {
-            background: transparent;
-        }
-    }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 467px;
+    //     height: 1233.79px;
+    //     left: 0;
+    //     top: -50%;
+    //     // background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
+    //     filter: blur(100px);
+    //     border-radius: 233.5px;
+    //     transform: rotate(-54.37deg);
+    //     background: linear-gradient(45deg, #002750, transparent);
+    //     @media screen and (max-width: 766px) {
+    //         background: transparent;
+    //     }
+    // }
     &::before {
         content: "";
         position: absolute;
