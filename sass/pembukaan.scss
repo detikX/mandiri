@@ -12,6 +12,9 @@
         width: 100%;
         height: 100%;
         opacity: .07;
+        @media screen and (max-width:766px) {
+            opacity: .2;
+        }
         &::after {
             content: "";
             position: absolute;
