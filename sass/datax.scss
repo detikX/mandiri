@@ -1,16 +1,20 @@
 .datax {
     background: $darkblue;
-
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
     .cardx {
         box-shadow: 0 0 0.5rem #fff, 
         inset 0 0 0.2rem #fff,
         0 0 .4rem $mandiri, 
         0 0 2rem $mandiri;
-        color: #bbb;
+        color: #fff;
         padding: 16px;
-        border-radius: 8px;
+        border-radius: 8px; 
 
         margin-bottom: 16px;
+        @media screen and (max-width:766px) {
+            margin-bottom: 24px;
+        }
     }
 
     .image {
