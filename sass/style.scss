@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Red+Hat+Display:wght@300&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
+@import 'variable';
 @import 'banner';
 @import 'pembukaan';
 @import 'data';
@@ -150,9 +151,9 @@ section {
     z-index: 8;
     p,
     div {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         @media screen and (max-width: 766px) {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
