@@ -91,10 +91,11 @@
         .cardo {
             width: 100%;
             .title {
-                font-family: 'Aeonik Regular';
+                font-family: 'Aeonik Medium';
                 font-size: 2rem;
                 // font-weight: 700;
                 margin-bottom: 0px;
+                color: $yellow;
             }
             .content {
                 color: #bbb;
