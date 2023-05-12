@@ -17,6 +17,7 @@
     //     // }
     // }
     background-image: url('../img/abstract.png');
+    // background-image: url('../img/garis.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +88,7 @@
         // padding: 100px;
         z-index: 16;
         padding: 24px;
-        background: rgba($color: white, $alpha: .03);
+        background: rgba($color: white, $alpha: .01);
         .cardo {
             width: 100%;
             .title {
