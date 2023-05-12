@@ -23,7 +23,23 @@
         border: 2px solid #888;
         border-radius: 8px;
         width: 720px;
+        background: $darkblue;
         margin: 50px auto 8px;
+        &::before {
+            position: absolute;
+            width: 30vw;
+            height: 20vh;
+            left: 0;
+            top: 0;
+            filter: blur(70px);
+            border-radius: 233.5px;
+            transform: rotate(-54.37deg);
+            background: linear-gradient(45deg, #0c4785, transparent);
+            content: "";
+            @media screen and (max-width:766px) {
+                height: 60vh;
+            }
+        }
         @media screen and (max-width:766px) {
             width: 100%;
         }
