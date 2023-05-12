@@ -1,0 +1,113 @@
+.after {
+    position: relative;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 20vw;
+    //     height: 80vh;
+    //     left: 0;
+    //     top: 10%;
+    //     // background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
+    //     filter: blur(70px);
+    //     border-radius: 233.5px;
+    //     transform: rotate(-54.37deg);
+    //     background: linear-gradient(45deg, #002750, transparent);
+    //     // @media screen and (max-width: 766px) {
+    //     //     background: transparent;
+    //     // }
+    // }
+    background-image: url('../img/abstract.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // opacity: .2;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, $darkblue, rgba($darkblue,.86), $darkblue);
+        // z-inde;
+    }
+    .bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: .07;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, $darkblue, transparent, $darkblue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    //gsap
+    .box {
+        position: relative;
+        width:100%;
+        min-height: 100vh;
+        padding: 100px;
+        .cardo {
+            width: 420px;
+            .title {
+                // font-family: 'Aeonik Regular';
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .content {
+                color: #bbb;
+                p {
+                    font-size: 1.2rem;
+
+                }
+            }
+        }
+      }
+      
+      .box h2 {
+        font-size: 2.5rem;
+      }
+      
+      .box img {
+        max-width: 300px;
+      }
+      
+      .box2 {
+        position: relative;
+        width:100%;
+        min-height: 100vh;
+        // padding: 100px;
+        z-index: 16;
+        padding: 24px;
+        background: rgba($color: white, $alpha: .03);
+        .cardo {
+            width: 100%;
+            .title {
+                font-family: 'Aeonik Regular';
+                font-size: 2rem;
+                // font-weight: 700;
+                margin-bottom: 0px;
+            }
+            .content {
+                color: #bbb;
+                p {
+                    font-size: 1.1rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+      }
+      
+      .box2 h2 {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+}
