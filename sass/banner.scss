@@ -110,7 +110,9 @@
                 // color: #30abfc;
                 color: white;
                 @media screen and (max-width: 766px) {
-                    font-size: 3.5rem;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    margin-bottom: 0;
                 }
             }
             &.second {
@@ -118,7 +120,9 @@
                 // color: #30abfc;
                 color: $yellow;
                 @media screen and (max-width: 766px) {
-                    font-size: 3.5rem;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    margin-bottom: 0;
                 }
             }
             &.third {
@@ -126,7 +130,9 @@
                 color: #f7bb2e;
                 // color: white;
                 @media screen and (max-width: 766px) {
-                    font-size: 3.5rem;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    margin-bottom: 0;
                 }
             }
         }
