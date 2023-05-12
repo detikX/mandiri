@@ -14,7 +14,7 @@
 }
 .banner {
     width: 100vw;
-    // background: #002750;
+    // background: $mandiri;
     background: $darkblue;
     height: 100%;
     padding: 0;
@@ -27,7 +27,7 @@
         right: 0;
         height: 100px;
         z-index: 11;
-        background: linear-gradient(to top, #101823, transparent);
+        background: linear-gradient(to top, $darkblue, transparent);
     }
     // &::after {
     //     content: "";
@@ -40,7 +40,7 @@
     //     filter: blur(100px);
     //     border-radius: 233.5px;
     //     transform: rotate(-54.37deg);
-    //     background: linear-gradient(45deg, #002750, transparent);
+    //     background: linear-gradient(45deg, $mandiri, transparent);
     //     @media screen and (max-width: 766px) {
     //         background: transparent;
     //     }
@@ -54,7 +54,7 @@
         right: -10%;
         z-index: 9;
         top: -30%;
-        background: linear-gradient(180deg, #002750 0%, #002750 100%);
+        background: linear-gradient(180deg, $mandiri 0%, $mandiri 100%);
         filter: blur(70px);
         border-radius: 233.5px;
         transform: rotate(65.71deg);
@@ -147,7 +147,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(45deg, #002750, transparent);
+            background: linear-gradient(45deg, $mandiri, transparent);
         }
         @media screen and (max-width:766px) {
             height: 100vh;

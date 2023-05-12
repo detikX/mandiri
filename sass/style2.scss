@@ -1,66 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Red+Hat+Display:wght@300&family=Bree+Serif&family=Kanit:wght@600&family=Montserrat:wght@400;700&display=swap');
+@import 'variable2';
 @import 'banner';
 @import 'pembukaan';
-@import 'data';
-@import 'penutup';
-main,
-body {
-    font-family: 'Oxanium', sans-serif;
-    // font-family: 'Nunito Sans', sans-serif;
-    overflow-x: hidden;
+@import 'datax';
+@import 'medi';
+@import 'after';
+@import 'bebas';
+@font-face {
+    font-family: "Aeonik Medium";
+    src: url('../fonts/Aeonik-Medium.woff2');
+    src: url('../fonts/Aeonik-Medium.woff2') format('woff2');
 }
 
-.preloader {
-    position: fixed;
-    top: 0;
-    // display: none;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-    // filter: blur(8px)
-    // backdrop-filter: blur(8px);
-    background: rgba($color: #000000, $alpha: 1);
-    .waiting {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-    }
-    .animate {
-        -webkit-animation-duration: 1.5s;
-        animation-duration: 1.5s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-    }
-    @-webkit-keyframes bounce {
-        0%,
-        100% {
-            -webkit-transform: translateX(0);
-        }
-        50% {
-            -webkit-transform: translateX(-10px);
-        }
-    }
-    @keyframes bounce {
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX(-10px);
-        }
-    }
-    .bounce {
-        -webkit-animation-name: bounce;
-        animation-name: bounce;
-    }
+@font-face {
+    font-family: "Aeonik Regular";
+    src: url('../fonts/Aeonik-Regular.woff2');
+    src: url('../fonts/Aeonik-Regular.woff2') format('woff2');
+}
+
+main,
+body {
+    // font-family: 'Aeonik Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .firstletter {
@@ -154,7 +117,7 @@ body {
 }
 
 #nav {
-    background: rgba(#002750, 0.5) !important;
+    background: rgba(0, 120, 130, 0.5) !important;
     z-index: 99 !important;
     backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
@@ -166,27 +129,13 @@ body {
     padding: 0;
 }
 
-#search {
-    z-index: 200 !important;
-}
-
-#search {
-    font-family: 'Montserrat' !important;
-    .s-result {
-        font-family: 'Montserrat' !important;
-    }
-}
-
 #share {
     z-index: 108;
-    div {
-        color: white;
-    }
 }
 
 .share_icon>a i {
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: initial;
     @media screen and (max-width: 766px) {
         font-size: 16px !important;
         line-height: initial;
@@ -203,12 +152,13 @@ section {
     padding: 32px 0;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
     z-index: 8;
     p,
     div {
         font-size: 1.2rem;
         @media screen and (max-width: 766px) {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -255,5 +205,40 @@ section {
     blockquote {
         margin-bottom: 0;
         color: white;
+    }
+}
+
+.titlex {
+    font-family: 'Aeonik Medium', sans-serif;
+    font-weight: 700;
+    color: white;
+    // letter-spacing: 2px;
+    font-size: 3.5rem;
+    // text-shadow: 2px 2px $yellow;
+    line-height: 4rem;
+    @media screen and (max-width:766px) {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+}
+
+.highlights {
+    color: $yellow;
+    font-weight: 700;
+}
+
+
+.footerm {
+    display: none;
+    @media screen and (max-width:766px) {
+        position: fixed;
+        height: 46px;
+        width: 100%;
+        background: #bbb;
+        z-index: 999;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
