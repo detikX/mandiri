@@ -20,7 +20,8 @@
 
     .with-img {
         position: relative;
-        border: 2px solid;
+        border: 2px solid #888;
+        border-radius: 8px;
         width: 720px;
         margin: 150px auto 8px;
         @media screen and (max-width:766px) {
