@@ -1,4 +1,4 @@
-.after {
+.content.after {
     position: relative;
     // &::after {
     //     content: "";
@@ -26,7 +26,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(to top, $darkblue, rgba($darkblue,.86), $darkblue);
+        background: linear-gradient(to top, $darkblue, rgba($darkblue, .86), $darkblue);
         // z-inde;
     }
     .bg {
@@ -48,11 +48,10 @@
             object-fit: cover;
         }
     }
-
     //gsap
     .box {
         position: relative;
-        width:100%;
+        width: 100%;
         min-height: 100vh;
         padding: 100px;
         .cardo {
@@ -67,23 +66,19 @@
                 color: #bbb;
                 p {
                     font-size: 1.2rem;
-
                 }
             }
         }
-      }
-      
-      .box h2 {
+    }
+    .box h2 {
         font-size: 2.5rem;
-      }
-      
-      .box img {
+    }
+    .box img {
         max-width: 300px;
-      }
-      
-      .box2 {
+    }
+    .box2 {
         position: relative;
-        width:100%;
+        width: 100%;
         min-height: 100vh;
         // padding: 100px;
         z-index: 16;
@@ -99,17 +94,16 @@
                 color: $yellow;
             }
             .content {
-                color: #bbb;
+                color: #fff;
                 p {
                     font-size: 1.1rem;
                     margin-bottom: 0;
                 }
             }
         }
-      }
-      
-      .box2 h2 {
+    }
+    .box2 h2 {
         font-size: 2.5rem;
         color: #fff;
-      }
+    }
 }
