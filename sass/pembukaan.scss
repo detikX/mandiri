@@ -6,12 +6,18 @@
     // padding: 72px 0 32px;
     z-index: 12;
     font-family: 'Red Hat Display', sans-serif;
+    @media screen and (max-width: 766px) {
+        padding: 80px 0 32px;
+    }
     .anim-1 {
         position: absolute;
         left: 5vw;
         bottom: 35vh;
         width: auto;
         height: auto;
+        @media screen and (max-width: 766px) {
+            bottom: 5vh;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -24,19 +30,10 @@
         top: 5vh;
         width: auto;
         height: auto;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        @media screen and (max-width: 766px) {
+            top: 0;
+            left: 3vw;
         }
-    }
-    .anim-4 {
-        position: absolute;
-        left: 5vw;
-        display: none;
-        top: 25vh;
-        width: 80px;
-        height: auto;
         img {
             width: 100%;
             height: 100%;
@@ -49,6 +46,9 @@
         top: 5vh;
         width: auto;
         height: auto;
+        @media screen and (max-width: 766px) {
+            top: 0;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -62,6 +62,10 @@
         width: 180px;
         opacity: .7;
         height: auto;
+        @media screen and (max-width: 766px) {
+            bottom: 10vh;
+            width: 90px;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -88,7 +92,7 @@
         height: 100%;
         opacity: .07;
         @media screen and (max-width: 766px) {
-            opacity: .07;
+            opacity: .15;
         }
         &::after {
             content: "";
