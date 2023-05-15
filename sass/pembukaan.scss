@@ -98,7 +98,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, transparent);
+            background: linear-gradient(to top, $darkblue, transparent, $darkblue);
         }
         img {
             width: 100%;
