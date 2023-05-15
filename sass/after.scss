@@ -86,6 +86,9 @@
         background: rgba($color: white, $alpha: .01);
         .cardo {
             width: 100%;
+            @media screen and (max-width: 766px) {
+                margin-bottom: 8px;
+            }
             .title {
                 font-family: 'Aeonik Medium';
                 font-size: 2rem;
