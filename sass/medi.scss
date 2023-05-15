@@ -106,7 +106,7 @@
     cursor: pointer;
     display: inline-block;
     margin: 8px;
-    padding: 8px;
+    padding: 16px;
     border-radius: 16px;
     transition: .3s;
     @media screen and (max-width: 766px) {
@@ -119,8 +119,8 @@
         box-shadow: 0 0 0.5rem #2b70b7, inset 0 0 0.2rem #1a6ec4, 0 0 0.4rem #0b4884, 0 0 2rem #0d3763;
     }
     .img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         margin: 0 auto;
         text-align: center;
         // margin-right: 8px;
