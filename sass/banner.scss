@@ -1,12 +1,12 @@
 .logo-bank {
     position: absolute;
-    top: 10vh;
-    right: 10vh;
+    bottom: 25vh;
+    left: 10vh;
     width: 150px;
     height: auto;
     padding: 8px 16px;
     border-radius: 8px;
-    background: rgba(white, 1);
+    background: #fff;
     z-index: 20;
     @media screen and (max-width: 766px) {
         top: initial;
