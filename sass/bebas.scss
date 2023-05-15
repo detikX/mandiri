@@ -9,7 +9,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, rgba($darkblue,.9), $darkblue);
+            background: linear-gradient(to top, $darkblue, rgba($darkblue, .9), $darkblue);
         }
         img {
             width: 100%;
@@ -17,10 +17,9 @@
             object-fit: cover;
         }
     }
-
     .with-img {
         position: relative;
-        border: 2px solid #888;
+        border: 2px solid #fafafa;
         border-radius: 8px;
         width: 720px;
         background: $darkblue;
@@ -36,7 +35,7 @@
             transform: rotate(-54.37deg);
             background: linear-gradient(45deg, #0c4785, transparent);
             content: "";
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 height: 60vh;
             }
         }
@@ -49,7 +48,7 @@
             bottom: 0;
             width: 200px;
             height: auto;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 left: -18px;
                 bottom: 0;
                 width: 150px;
@@ -66,7 +65,7 @@
             font-size: 2rem;
             line-height: 2.2rem;
             font-family: 'DM Serif Display';
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 padding: 16px 16px 190px 16px;
                 font-size: 1.5rem;
                 line-height: 1.6rem;

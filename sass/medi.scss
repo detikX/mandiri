@@ -75,6 +75,7 @@
         right: 24px;
         width: 70px;
         height: 70px;
+        transform: rotate(180deg);
         bottom: -32px;
         background: $darkblue;
         padding: 8px;
@@ -89,7 +90,6 @@
         width: 100%;
         font-size: 1.5rem;
         line-height: 1.8rem;
-        
     }
 }
 
@@ -109,17 +109,14 @@
     padding: 8px;
     border-radius: 16px;
     transition: .3s;
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         padding: 0;
         width: 100%;
         display: block;
         margin: 16px 0;
     }
     &:hover {
-        box-shadow: 0 0 0.5rem #fff, 
-            inset 0 0 0.2rem #fff,
-            0 0 .4rem $mandiri, 
-            0 0 2rem $mandiri;
+        box-shadow: 0 0 0.5rem #fff, inset 0 0 0.2rem #fff, 0 0 .4rem $mandiri, 0 0 2rem $mandiri;
     }
     .img {
         width: 120px;
@@ -131,12 +128,11 @@
         // background: rgba($color: #ccc, $alpha: .5);
         // backdrop-filter: blur(8px);
         // border: 1px solid #ddd;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             display: inline-block;
             margin: initial;
             width: 80px;
             margin-right: 8px;
-            
         }
         img {
             width: 100%;
@@ -149,17 +145,15 @@
         margin: 0 auto;
         text-align: center;
         font-family: 'Aeonik Medium';
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             display: inline-block;
             margin: initial;
             text-align: left;
             width: 50%;
-            
         }
         .ket {
             font-size: 1.5rem;
             color: $yellow;
-
         }
         .sed {
             font-family: 'Red Hat Display', sans-serif;
