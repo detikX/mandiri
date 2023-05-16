@@ -87,3 +87,15 @@
         }
     }
 }
+
+.from {
+    .font-bold {
+        margin-top: 8px;
+        line-height: 1rem;
+    }
+    .gelar {
+        font-family: 'Red Hat Display';
+        color: $yellow;
+        font-weight: 700;
+    }
+}
