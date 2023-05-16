@@ -1,0 +1,25 @@
+.buttonx {
+    background: $darkblue;
+    min-height: auto;
+    padding: 32px;
+    .btn-klik {
+        text-align: center;
+        // background: white;
+        box-shadow: 0 0 0.5rem #2b70b7, inset 0 0 0.2rem #1a6ec4, 0 0 0.4rem #0b4884, 0 0 2rem #0d3763;
+        // backdrop-filter: blur(5px);
+        color: white;
+        padding: 16px;
+        font-weight: 700;
+        font-size: 2rem;
+        border-radius: 8px;
+        transition: .6s;
+        background: rgba(#2b70b7, 1);
+        cursor: pointer;
+        @media screen and (max-width: 766px) {}
+        &:hover {
+            // backdrop-filter: blur(1px);
+            // background: rgba(#2b70b7, .2);
+            background: #73a2d0;
+        }
+    }
+}
