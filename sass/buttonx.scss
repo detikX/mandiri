@@ -15,11 +15,26 @@
         transition: .6s;
         background: rgba(#2b70b7, 1);
         cursor: pointer;
+        position: relative;
         @media screen and (max-width: 766px) {}
+        &:focus, &:active {
+            transform: scale(1.3);
+            background: #73a2d0;
+            // color: black !important;
+        }
         &:hover {
             // backdrop-filter: blur(1px);
             // background: rgba(#2b70b7, .2);
             background: #73a2d0;
         }
     }
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-detik {
+    width: 80vw;
+    max-width: 80vw;
 }
