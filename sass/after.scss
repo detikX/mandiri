@@ -54,8 +54,14 @@
         width: 100%;
         min-height: 100vh;
         padding: 100px;
+        @media screen and (max-width: 766px) {
+            padding: 16px;
+        }
         .cardo {
-            width: 420px;
+            // width: 420px;
+            @media screen and (max-width: 766px) {
+                width: 100%;
+            }
             .title {
                 // font-family: 'Aeonik Regular';
                 font-size: 2rem;
@@ -63,7 +69,7 @@
                 margin-bottom: 8px;
             }
             .content {
-                color: #bbb;
+                color: #fafafa;
                 p {
                     font-size: 1.2rem;
                 }
@@ -84,6 +90,9 @@
         z-index: 16;
         padding: 24px;
         background: rgba($color: white, $alpha: .01);
+        @media screen and (max-width: 766px) {
+            padding: 16px;
+        }
         .cardo {
             width: 100%;
             @media screen and (max-width: 766px) {
