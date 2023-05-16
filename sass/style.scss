@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Red+Hat+Display:wght@300&family=Bree+Serif&family=Kanit:wght@600&family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=DM+Serif+Display&family=Oxanium&family=Red+Hat+Display:wght@300&family=Bree+Serif&family=Kanit:wght@600&family=Montserrat:wght@400;700&display=swap');
 @import 'variable';
 @import 'banner';
 @import 'pembukaan';
@@ -216,7 +216,7 @@ section {
     font-size: 3.5rem;
     // text-shadow: 2px 2px $yellow;
     line-height: 4rem;
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         font-size: 2.2rem;
         line-height: 2.4rem;
     }
@@ -227,10 +227,9 @@ section {
     font-weight: 700;
 }
 
-
 .footerm {
     display: none;
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         position: fixed;
         height: 46px;
         width: 100%;
