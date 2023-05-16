@@ -95,9 +95,10 @@
         }
         .cardo {
             width: 100%;
+            margin-bottom: 16px;
             position: relative;
             @media screen and (max-width: 766px) {
-                margin-bottom: 8px;
+                margin-bottom: 32px;
             }
             .title {
                 font-family: 'Montserrat', sans-serif;
@@ -107,10 +108,10 @@
                 left: -20px;
                 // border: 2px solid white;
                 top: -20px;
-                background: $yellow;
+                background: rgba(#094d94, 1);
                 // font-weight: 700;
                 margin-bottom: 0px;
-                color: #094d94;
+                color: $yellow;
                 // color: white;
                 border-radius: 50%;
                 width: 50px;
@@ -118,7 +119,7 @@
                 text-align: center;
             }
             .content {
-                background: rgba(#094d94, .8);
+                background: rgba(#094d94, 1);
                 border-radius: 16px;
                 padding: 16px 16px 16px 32px;
                 color: #fff;
