@@ -100,10 +100,12 @@
         height: auto;
 
         @media screen and (max-width: 766px) {
-            width: 100vw;
+            width: 90vw;
             top: initial;
             bottom: 10vh;
             right: initial;
+            left: 8px;
+
         }
 
         img {
