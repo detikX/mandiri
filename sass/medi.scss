@@ -25,6 +25,59 @@
         }
     }
 
+    .img_iconw {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        display: inline-block;
+        vertical-align: middle;
+
+        @media screen and (max-width:766px) {
+            width: 140px;
+            height: 140px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .lingkaran {
+            width: 180px;
+            height: 180px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+
+            @media screen and (max-width:766px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .dat {
+            position: absolute;
+            inset: 0;
+            z-index: 9;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+    .cardw {
+        display: inline-block;
+        width: 50%;
+
+        @media screen and (max-width:766px) {
+            width: 50%;
+        }
+    }
+
     .cardx {
         display: inline-block;
         width: 60%;
