@@ -99,6 +99,20 @@
         z-index: 10;
         height: auto;
 
+        .bu {
+            position: absolute;
+            // inset: 0;
+            bottom: 5vh;
+            width: 100%;
+            height: 420px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
         @media screen and (max-width: 766px) {
             width: 90vw;
             top: initial;
@@ -150,7 +164,7 @@
                 color: white;
 
                 @media screen and (max-width: 766px) {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     line-height: 3rem;
                     margin-bottom: 0;
                 }
@@ -175,7 +189,7 @@
 
                 // color: white;
                 @media screen and (max-width: 766px) {
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                     line-height: 3rem;
                     margin-bottom: 0;
                 }

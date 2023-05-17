@@ -61,14 +61,34 @@
         padding: 100px;
 
         @media screen and (max-width: 766px) {
-            padding: 62px 16px;
+            padding: 8px 16px;
         }
 
         .cardo {
+            position: relative;
 
             // width: 420px;
             @media screen and (max-width: 766px) {
                 width: 100%;
+            }
+
+            .img_b {
+                display: inline-block;
+                width: 220px;
+                height: 220px;
+                vertical-align: top;
+
+                @media screen and (max-width:766px) {
+                    width: 120px;
+                    display: block;
+                    height: 120px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
             }
 
             .title {
@@ -80,9 +100,22 @@
 
             .content {
                 color: #fafafa;
+                display: inline-block;
+                width: 60%;
+                margin-left: 12px;
+                vertical-align: top;
+
+                @media screen and (max-width:766px) {
+                    display: block;
+                    width: 100%;
+                }
 
                 p {
                     font-size: 1.2rem;
+
+                    @media screen and (max-width:766px) {
+                        font-size: .85rem;
+                    }
                 }
             }
         }
