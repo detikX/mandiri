@@ -3,11 +3,21 @@
     position: relative;
     color: white;
 
+    .data__title {
+        margin: 8px 0 24px;
+    }
+
     h4 {
         font-size: 2rem;
         font-weight: bold;
         // color: $yellow;
         font-family: 'Montserrat', sans-serif;
+        // margin: 8px 0 16px;
+
+        @media screen and (max-width:766px) {
+            font-size: 1.7rem;
+            color: #ececec;
+        }
     }
 
     .img_icon {
