@@ -2,12 +2,39 @@
     background: $darkblue;
     position: relative;
     color: white;
+
     h4 {
         font-size: 2rem;
         font-weight: bold;
         // color: $yellow;
         font-family: 'Montserrat', sans-serif;
     }
+
+    .img_icon {
+        display: inline-block;
+        width: 120px;
+        vertical-align: top;
+        height: 120px;
+        margin-right: 16px;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .cardx {
+        display: inline-block;
+        width: 60%;
+
+        @media screen and (max-width:766px) {
+            margin-bottom: 24px;
+        }
+
+    }
+
     // &::after {
     //     content: "";
     //     position: absolute;
@@ -32,6 +59,7 @@
         inset: 0;
         height: 100%;
         opacity: .1;
+
         &::before {
             content: "";
             position: absolute;
@@ -39,6 +67,7 @@
             z-index: 2;
             background: linear-gradient(to bottom, $darkblue, transparent, $darkblue);
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -61,6 +90,7 @@
     border-radius: 16px;
     border: 2px solid;
     position: relative;
+
     &__top {
         position: absolute;
         left: 24px;
@@ -70,12 +100,14 @@
         background: $darkblue;
         padding: 8px;
         z-index: 17;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     &__bottom {
         position: absolute;
         right: 24px;
@@ -86,12 +118,14 @@
         background: $darkblue;
         padding: 8px;
         z-index: 17;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     @media screen and (max-width:766px) {
         width: 100%;
         font-size: 1.5rem;
@@ -119,21 +153,25 @@
     padding: 16px;
     border-radius: 16px;
     transition: .3s;
+
     @media screen and (max-width: 766px) {
         padding: 0;
         width: 100%;
         display: block;
         margin: 16px 0;
     }
+
     &:hover {
         box-shadow: 0 0 0.5rem #2b70b7, inset 0 0 0.2rem #1a6ec4, 0 0 0.4rem #0b4884, 0 0 2rem #0d3763;
         backdrop-filter: blur(5px);
     }
+
     .img {
         width: 100px;
         height: 100px;
         margin: 0 auto;
         text-align: center;
+
         // margin-right: 8px;
         // border-radius: 70%;
         // background: rgba($color: #ccc, $alpha: .5);
@@ -145,31 +183,37 @@
             width: 80px;
             margin-right: 8px;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .cont {
         // font-weight: bold;
         margin: 0 auto;
         text-align: center;
         font-family: 'Aeonik Medium';
+
         @media screen and (max-width: 766px) {
             display: inline-block;
             margin: initial;
             text-align: left;
             width: 50%;
         }
+
         .ket {
             font-size: 1.5rem;
             color: $yellow;
         }
+
         .sed {
             font-family: 'Red Hat Display', sans-serif;
             font-size: 1rem;
         }
+
         // width: 60%;
         // border: 1px solid;
     }
@@ -177,6 +221,7 @@
 
 .coba {
     position: relative;
+
     &::after {
         content: "";
         display: none;
@@ -191,6 +236,7 @@
         border-radius: 233.5px;
         transform: rotate(-54.37deg);
         background: linear-gradient(45deg, #002750, transparent);
+
         @media screen and (max-width: 766px) {
             background: transparent;
         }

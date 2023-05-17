@@ -21,14 +21,62 @@
 
     // overflow-x: auto;
 
+
+    .help-left {
+        // content: "";
+        position: absolute;
+        left: -32px;
+        border: 1px dashed;
+        bottom: -56px;
+        width: 100%;
+        height: 75%;
+        // background: yellow;
+
+        &::after {
+            content: "";
+            width: 83%;
+            position: absolute;
+            right: -2px;
+            background: $darkblue;
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    .help-right {
+        // content: "";
+        position: absolute;
+        right: -32px;
+        border: 1px dashed;
+        bottom: -56px;
+        width: 100%;
+        height: 100%;
+        // background: yellow;
+
+        &::after {
+            content: "";
+            width: 83%;
+            position: absolute;
+            left: -2px;
+            background: $darkblue;
+            top: 0;
+            bottom: 0;
+        }
+    }
+
     .cardx {
         // box-shadow: 0 0 0.5rem #fff, 
         border: 1px solid;
         // height: 100vh;
         color: #fff;
+        display: inline-block;
         padding: 16px;
         border-radius: 8px;
         margin-bottom: 16px;
+        position: relative;
+        background: $darkblue;
+        z-index: 8;
+
 
         @media screen and (max-width: 766px) {
             margin-bottom: 24px;
