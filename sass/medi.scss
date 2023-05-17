@@ -2,6 +2,18 @@
     background: $darkblue;
     position: relative;
     color: white;
+    background-image: url('../img/garis.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, $darkblue, rgba($darkblue, .8), $darkblue);
+    }
 
     .data__title {
         margin: 8px 0 24px;
