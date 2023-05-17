@@ -50,7 +50,7 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
         trigger: ".box2",
-        start: "center center",
+        start: "top top",
         end: "bottom top",
         scrub: 1,
         pin: true
