@@ -194,10 +194,10 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, rgba($darkblue, .1));
+            background: linear-gradient(to top, $darkblue, rgba($darkblue, .7));
 
             @media screen and (max-width:766px) {
-                background: linear-gradient(to top, rgba($darkblue, 1), transparent);
+                background: linear-gradient(to top, rgba($darkblue, 1), rgba($darkblue, .5));
             }
         }
 
