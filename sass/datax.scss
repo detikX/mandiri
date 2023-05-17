@@ -3,6 +3,22 @@
     position: relative;
     font-family: 'Red Hat Display', sans-serif;
     color: white;
+
+    &.bg-pol {
+        background-attachment: fixed;
+        background-image: url('../img/polygon.png');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba($color: $darkblue, $alpha: .9);
+        }
+    }
+
     // overflow-x: auto;
 
     .cardx {

@@ -46,15 +46,15 @@
     z-index: 9;
     position: relative;
 
-    .helping-bottom {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100px;
-        z-index: 11;
-        background: linear-gradient(to top, $darkblue, transparent);
-    }
+    // .helping-bottom {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 100px;
+    //     z-index: 11;
+    //     background: linear-gradient(to top, $darkblue, transparent);
+    // }
 
     // &::after {
     //     content: "";
@@ -72,24 +72,24 @@
     //         background: transparent;
     //     }
     // }
-    &::before {
-        content: "";
-        position: absolute;
-        width: 400px;
-        overflow-y: hidden;
-        height: 930px;
-        right: -10%;
-        z-index: 9;
-        top: -30%;
-        background: linear-gradient(180deg, $darkblue 0%, $darkblue 100%);
-        filter: blur(70px);
-        border-radius: 233.5px;
-        transform: rotate(65.71deg);
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 400px;
+    //     overflow-y: hidden;
+    //     height: 930px;
+    //     right: -10%;
+    //     z-index: 9;
+    //     top: -30%;
+    //     background: linear-gradient(180deg, $darkblue 0%, $darkblue 100%);
+    //     filter: blur(70px);
+    //     border-radius: 233.5px;
+    //     transform: rotate(65.71deg);
 
-        @media screen and (max-width: 766px) {
-            opacity: .7;
-        }
-    }
+    //     @media screen and (max-width: 766px) {
+    //         opacity: .7;
+    //     }
+    // }
 
     &__test {
         position: absolute;
@@ -191,7 +191,11 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(45deg, $mandiri, transparent);
+            background: linear-gradient(to top, $mandiri, rgba($mandiri, .5));
+
+            @media screen and (max-width:766px) {
+                background: linear-gradient(to top, rgba($darkblue, 1), rgba($darkblue, .3));
+            }
         }
 
         @media screen and (max-width:766px) {
