@@ -1,0 +1,15 @@
+.parent {
+    border: 1px solid red;
+}
+
+.sticky-header {
+    background-color: #1591fe;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.is-sticky {
+    position: sticky;
+    top: 0;
+}
