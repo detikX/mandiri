@@ -39,6 +39,10 @@
         height: 120px;
         margin-right: 16px;
 
+        @media screen and (max-width:766px) {
+            margin-right: 6px;
+        }
+
 
         img {
             width: 100%;
