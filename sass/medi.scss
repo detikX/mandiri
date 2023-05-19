@@ -348,3 +348,32 @@
         }
     }
 }
+
+.deskripsi {
+    background: rgba(#195592, 1);
+    padding: 8px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: -4px;
+        height: 36px;
+        right: 0;
+        background: rgba(#195592, 1);
+        transform: skew(-4deg, -4deg);
+        width: 105%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        left: -4px;
+        height: 36px;
+        right: 0;
+        background: rgba(#195592, 1);
+        transform: skew(-4deg, -4deg);
+        width: 105%;
+    }
+    // border-top: 2px solid #fff;
+}
