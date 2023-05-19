@@ -183,7 +183,9 @@
 
 main {
     .btn-secondary {
-        background: #f4af3c !important;
+        margin-top: 16px;
+        // background: #f4af3c !important;
+        background: linear-gradient(45deg, #f4af3c 65%, white) !important;
         font-weight: 700;
         width: 80%;
         font-size: 1.5rem;
