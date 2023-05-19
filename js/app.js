@@ -65,3 +65,13 @@ $(document).ready(function() {
 //             amount: 0.5,
 //         }
 //     })
+
+$(".helping-hidden").hide();
+
+$("#mulai").click(function() {
+    $(".helping-hidden").fadeIn('fast');
+    $('html, body').animate({
+        scrollTop: $(".helping-hidden").offset().top
+    }, 1000);
+    $(this).hide();
+})
