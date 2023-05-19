@@ -419,9 +419,12 @@
         height: 36px;
         right: 0;
         background: rgba(#195592, 1);
-        transform: skew(-4deg, -4deg);
         // width: 105%;
+        transform: skew(-1deg, -1deg);
         overflow-x: hidden;
+        @media screen and (max-width: 766px) {
+            transform: skew(-4deg, -4deg);
+        }
     }
     &::after {
         content: "";
@@ -432,7 +435,10 @@
         overflow-x: hidden;
         right: 0;
         background: rgba(#195592, 1);
-        transform: skew(-4deg, -4deg);
+        transform: skew(-1deg, -1deg);
+        @media screen and (max-width: 766px) {
+            transform: skew(-4deg, -4deg);
+        }
         // width: 105%;
     }
     // border-top: 2px solid #fff;
