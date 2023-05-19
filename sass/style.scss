@@ -272,3 +272,9 @@ section {
     }
     // z-index: 90;
 }
+
+.font-in {
+    @media screen and(max-width: 766px) {
+        font-size: 1.9rem;
+    }
+}
