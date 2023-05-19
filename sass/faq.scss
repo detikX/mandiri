@@ -26,7 +26,7 @@
         &:hover,
         &:focus,
         &:active {
-            background: rgba($color: #244179, $alpha: .8);
+            background: rgba($color: #244179, $alpha: 1);
             transition: .3s;
         }
     }
