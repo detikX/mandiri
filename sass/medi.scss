@@ -30,7 +30,7 @@
     .img_icon {
         display: inline-block;
         width: 120px;
-        vertical-align: top;
+        vertical-align: middle;
         height: 120px;
         margin-right: 16px;
         @media screen and (max-width: 766px) {
@@ -157,6 +157,7 @@
         width: 60%;
         @media screen and (max-width: 766px) {
             margin-bottom: 24px;
+            vertical-align: middle;
         }
     }
     // &::after {
