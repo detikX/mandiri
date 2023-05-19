@@ -3,14 +3,12 @@
     position: relative;
     font-family: 'Red Hat Display', sans-serif;
     color: white;
-
     &.bg-pol {
         background-attachment: fixed;
         background-image: url('../img/garis.png');
         background-position: center;
         background-size: cover;
         position: relative;
-
         &::before {
             content: "";
             position: absolute;
@@ -18,20 +16,16 @@
             background: rgba($color: $darkblue, $alpha: .9);
         }
     }
-
     // overflow-x: auto;
-
-
     .help-left {
         // content: "";
         position: absolute;
         left: -32px;
-        border: 1px dashed;
+        border: 2px dashed;
         bottom: -56px;
         width: 100%;
         height: 75%;
         // background: yellow;
-
         &::after {
             content: "";
             width: 83%;
@@ -42,17 +36,15 @@
             bottom: 0;
         }
     }
-
     .help-right {
         // content: "";
         position: absolute;
         right: -32px;
-        border: 1px dashed;
+        border: 2px dashed;
         bottom: -56px;
         width: 100%;
         height: 100%;
         // background: yellow;
-
         &::after {
             content: "";
             width: 83%;
@@ -63,10 +55,9 @@
             bottom: 0;
         }
     }
-
     .cardx {
         // box-shadow: 0 0 0.5rem #fff, 
-        border: 1px solid;
+        border: 2px solid;
         // height: 100vh;
         color: #fff;
         display: inline-block;
@@ -76,20 +67,16 @@
         position: relative;
         background: $darkblue;
         z-index: 8;
-
-
         @media screen and (max-width: 766px) {
             margin-bottom: 24px;
         }
     }
-
     .coding {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         opacity: .07;
-
         @media screen and (max-width: 766px) {
             position: absolute;
             width: 100%;
@@ -99,28 +86,24 @@
             right: 0;
             left: 0;
         }
-
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, $darkblue, transparent, $darkblue);
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     .image {
         width: 100%;
         height: 100%;
         position: absolute;
         inset: 0;
         opacity: .2;
-
         img {
             width: 100%;
             height: 100%;
@@ -131,12 +114,10 @@
 
 .icon {
     position: absolute;
-
     @media screen and (max-width: 766px) {
         width: 10vw !important;
         // height: 30px;
     }
-
     &-left {
         // position: absolute;
         left: 10vw;
@@ -144,21 +125,18 @@
         top: 0px;
         width: auto;
         height: auto;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     &-right {
         right: 10vw;
         // transform: rotate(-180deg);
         top: 0px;
         width: auto;
         height: auto;
-
         img {
             width: 100%;
             height: 100%;
@@ -174,12 +152,10 @@
         font-weight: 700;
         font-family: 'Red Hat Display';
     }
-
     .gelar {
         font-family: 'Red Hat Display';
         color: $yellow;
         font-weight: 700;
-
         @media screen and (max-width: 766px) {
             font-size: 1rem;
         }
