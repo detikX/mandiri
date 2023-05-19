@@ -485,7 +485,7 @@
         right: 0;
         background: rgba(#195592, 1);
         // width: 105%;
-        transform: skew(-1deg, -1deg);
+        // transform: skew(-1deg, -1deg);
         overflow-x: hidden;
 
         @media screen and (max-width: 766px) {
@@ -502,7 +502,7 @@
         overflow-x: hidden;
         right: 0;
         background: rgba(#195592, 1);
-        transform: skew(-1deg, -1deg);
+        // transform: skew(-1deg, -1deg);
 
         @media screen and (max-width: 766px) {
             transform: skew(-4deg, -4deg);

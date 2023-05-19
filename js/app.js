@@ -76,11 +76,17 @@ $("#mulai").click(function () {
     //     'visibility': 'visible',
     //     'height': 'auto',
     // });
-
-    $(".helping-hidden").show();
+    // new WOW().init();
+    // AOS.init()
+    // $(".helping-hidden").show();
+    $('.test-sticky').removeClass('aos-animate');
+    setTimeout(function () {
+        $('.test-sticky').addClass('aos-animate');
+    }, 400);
+    // $()
     AOS.refresh();
-    $('html, body').animate({
-        scrollTop: $(".helping-hidden").offset().top - 20
-    }, 1000);
+    // $('html, body').animate({
+    //     scrollTop: $(".helping-hidden").offset().top - 20
+    // }, 1000);
     $(this).hide();
 })
