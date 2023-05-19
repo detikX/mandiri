@@ -183,9 +183,11 @@
 
 main {
     .btn-secondary {
-        background: white !important;
+        background: #f4af3c !important;
         font-weight: 700;
-        font-size: 1.2rem;
+        width: 80%;
+        font-size: 1.5rem;
+        text-transform: uppercase;
         color: $darkblue !important;
         outline: 0;
         box-shadow: none;
