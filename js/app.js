@@ -47,21 +47,21 @@ $(document).ready(function() {
 //     })
 
 
-gsap.timeline({
-        scrollTrigger: {
-            trigger: ".box2",
-            start: "top top",
-            end: "bottom top",
-            scrub: 1,
-            pin: true
-        }
-    })
-    .from(".box2", {
-        opacity: 0,
-    })
-    .from(".text4", {
-        y: innerHeight * 1,
-        stagger: {
-            amount: 0.5,
-        }
-    })
+// gsap.timeline({
+//         scrollTrigger: {
+//             trigger: ".box2",
+//             start: "top top",
+//             end: "bottom top",
+//             scrub: 1,
+//             pin: true
+//         }
+//     })
+//     .from(".box2", {
+//         opacity: 0,
+//     })
+//     .from(".text4", {
+//         y: innerHeight * 1,
+//         stagger: {
+//             amount: 0.5,
+//         }
+//     })

@@ -71,9 +71,9 @@
                 height: 220px;
                 vertical-align: top;
                 @media screen and (max-width: 766px) {
-                    width: 120px;
+                    width: 150px;
                     display: block;
-                    height: 120px;
+                    height: 150px;
                 }
                 img {
                     width: 100%;
@@ -178,10 +178,10 @@
                     padding: 16px 72px 16px 32px
                 }
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     margin-bottom: 0;
                     @media screen and (max-width: 766px) {
-                        font-size: .9rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
