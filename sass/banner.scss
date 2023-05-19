@@ -8,7 +8,6 @@
     border-radius: 8px;
     background: #fff;
     z-index: 20;
-
     @media screen and (max-width: 766px) {
         top: initial;
         padding: 8px;
@@ -17,7 +16,6 @@
         right: initial;
         left: initial;
     }
-
     // display: none;
     img {
         width: 100%;
@@ -45,7 +43,6 @@
     padding: 0;
     z-index: 9;
     position: relative;
-
     // .helping-bottom {
     //     position: absolute;
     //     bottom: 0;
@@ -55,7 +52,6 @@
     //     z-index: 11;
     //     background: linear-gradient(to top, $darkblue, transparent);
     // }
-
     // &::after {
     //     content: "";
     //     position: absolute;
@@ -85,12 +81,10 @@
     //     filter: blur(70px);
     //     border-radius: 233.5px;
     //     transform: rotate(65.71deg);
-
     //     @media screen and (max-width: 766px) {
     //         opacity: .7;
     //     }
     // }
-
     &__test {
         position: absolute;
         right: 10vw;
@@ -98,19 +92,15 @@
         width: 550px;
         z-index: 10;
         height: auto;
-
         @keyframes MoveUpDown {
-
             0%,
             100% {
                 right: 0px;
             }
-
             50% {
                 right: 16px;
             }
         }
-
         .bu {
             position: absolute;
             // animation: MoveUpDown 1s linear infinite;
@@ -120,40 +110,33 @@
             bottom: 5vh;
             width: 100%;
             height: 420px;
-
             &.animation-one {
                 animation: MoveUpDown 1.5s linear infinite;
                 right: 0;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         @media screen and (max-width: 766px) {
             width: 90vw;
             top: initial;
             bottom: 10vh;
             right: initial;
             left: 8px;
-
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     &__title {
         position: absolute !important;
         left: 5vw;
         top: 15vh;
-
         @media screen and (max-width: 766px) {
             // top: initial;
             // bottom: 30vh;
@@ -163,7 +146,6 @@
             width: 100%;
             transform: translate(-50%, 0%);
         }
-
         h2 {
             color: white;
             // font-family: 'Kanit';
@@ -172,41 +154,34 @@
             text-shadow: 2px 2px black;
             line-height: 7rem;
             font-weight: 700;
-
             @media screen and (max-width: 766px) {
                 line-height: 3rem;
             }
-
             // font-size: 3.5rem;
             &.first {
                 font-size: 5.5rem;
                 // color: #30abfc;
                 color: white;
-
                 @media screen and (max-width: 766px) {
                     font-size: 2.5rem;
                     line-height: 3rem;
                     margin-bottom: 0;
                 }
             }
-
             &.second {
                 font-size: 6rem;
                 // color: #30abfc;
                 color: $yellow;
                 line-height: 6rem;
-
                 @media screen and (max-width: 766px) {
                     font-size: 3rem;
                     line-height: 3rem;
                     margin-bottom: 0;
                 }
             }
-
             &.third {
                 font-size: 6.5rem;
                 color: #f7bb2e;
-
                 // color: white;
                 @media screen and (max-width: 766px) {
                     font-size: 3.5rem;
@@ -216,29 +191,24 @@
             }
         }
     }
-
     &__img {
         width: 100%;
         opacity: .4;
         height: 100%;
         position: absolute;
         inset: 0;
-
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, $darkblue, rgba($darkblue, .7));
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 background: linear-gradient(to top, rgba($darkblue, 1), rgba($darkblue, .5));
             }
         }
-
         @media screen and (max-width:766px) {
             height: 100vh;
         }
-
         img {
             width: 100%;
             height: 100%;
