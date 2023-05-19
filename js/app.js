@@ -1,11 +1,11 @@
-$(window).on("load", function() {
+$(window).on("load", function () {
     $(".preloader").fadeOut(10000);
     $(".preloader").remove();
 });
 
 $(".answer").hide();
 var action = 'click';
-$(document).on(action, 'li.question', function() {
+$(document).on(action, 'li.question', function () {
     $(this).next().slideToggle(200)
         .siblings("li.answer").slideUp();
 
@@ -15,7 +15,7 @@ $(document).on(action, 'li.question', function() {
     img.toggleClass('rotate')
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
     AOS.init()
 })
 
@@ -66,16 +66,19 @@ $(document).ready(function() {
 //         }
 //     })
 
-$(".helping-hidden").css({
-    'visibility': 'hidden',
-    'height': '0px',
-});
+// $(".helping-hidden").css({
+//     'visibility': 'hidden',
+//     'height': '0px',
+// // });
+$(".helping-hidden").hide()
+$("#mulai").click(function () {
+    // $(".helping-hidden").css({
+    //     'visibility': 'visible',
+    //     'height': 'auto',
+    // });
 
-$("#mulai").click(function() {
-    $(".helping-hidden").css({
-        'visibility': 'visible',
-        'height': 'auto',
-    });
+    $(".helping-hidden").show();
+    AOS.refresh();
     $('html, body').animate({
         scrollTop: $(".helping-hidden").offset().top - 20
     }, 1000);
