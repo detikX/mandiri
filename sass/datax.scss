@@ -180,3 +180,20 @@
         }
     }
 }
+
+main {
+    .btn-secondary {
+        background: white !important;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $darkblue !important;
+        outline: 0;
+        box-shadow: none;
+        border-color: transparent;
+        border-radius: 8px;
+        &:hover {
+            background: rgba($color: white, $alpha: .7) !important;
+            box-shadow: none;
+        }
+    }
+}

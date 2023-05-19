@@ -213,6 +213,7 @@
     .cardx {
         display: inline-block;
         width: 60%;
+        vertical-align: middle;
         @media screen and (max-width: 766px) {
             margin-bottom: 24px;
             vertical-align: middle;
