@@ -242,6 +242,7 @@ section {
     z-index: 102;
     left: 0;
     height: 56px;
+    display: none;
     width: 100%;
     background: black;
 }
@@ -267,6 +268,7 @@ section {
     @media screen and (max-width: 766px) {
         margin-bottom: 24px;
         top: 0;
+        text-align: center;
     }
     // z-index: 90;
 }
