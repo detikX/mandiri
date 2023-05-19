@@ -66,10 +66,16 @@ $(document).ready(function() {
 //         }
 //     })
 
-$(".helping-hidden").hide();
+$(".helping-hidden").css({
+    'visibility': 'hidden',
+    'height': '0px',
+});
 
 $("#mulai").click(function() {
-    $(".helping-hidden").fadeIn('fast');
+    $(".helping-hidden").css({
+        'visibility': 'visible',
+        'height': 'auto',
+    });
     $('html, body').animate({
         scrollTop: $(".helping-hidden").offset().top - 20
     }, 1000);
