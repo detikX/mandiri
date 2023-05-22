@@ -78,15 +78,12 @@ $("#mulai").click(function () {
     // });
     // new WOW().init();
     // AOS.init()
-    // $(".helping-hidden").show();
-    $('.test-sticky').removeClass('aos-animate');
-    setTimeout(function () {
-        $('.test-sticky').addClass('aos-animate');
-    }, 400);
+    $(".helping-hidden").show();
+    $('html, body').animate({
+        scrollTop: $(".helping-hidden").offset().top - 20
+    }, 1000);
+
     // $()
     AOS.refresh();
-    // $('html, body').animate({
-    //     scrollTop: $(".helping-hidden").offset().top - 20
-    // }, 1000);
     $(this).hide();
 })

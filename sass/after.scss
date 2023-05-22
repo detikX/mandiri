@@ -21,6 +21,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
     // opacity: .2;
     &::before {
         content: "";
@@ -29,6 +30,7 @@
         background: linear-gradient(to top, $darkblue, rgba($darkblue, .86), $darkblue);
         // z-inde;
     }
+
     .bg {
         position: absolute;
         inset: 0;
@@ -36,72 +38,87 @@
         height: 100%;
         z-index: 2;
         opacity: .07;
+
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, $darkblue, transparent, $darkblue);
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     //gsap
     .box {
         position: relative;
         width: 100%;
         min-height: 100vh;
         padding: 100px;
+
         @media screen and (max-width: 766px) {
             padding: 16px 16px !important;
             min-height: 0;
             height: auto !important;
         }
+
         .cardo {
             position: relative;
+
             // width: 420px;
             @media screen and (max-width: 766px) {
                 width: 100%;
             }
+
             .img_b {
                 display: inline-block;
                 width: 220px;
                 height: 220px;
                 vertical-align: top;
+
                 @media screen and (max-width: 766px) {
                     width: 150px;
                     display: block;
                     height: 150px;
                 }
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                 }
             }
+
             .title {
                 // font-family: 'Aeonik Regular';
                 font-size: 2rem;
                 font-weight: 700;
                 margin-bottom: 8px;
             }
+
             .content {
                 color: #fafafa;
                 display: inline-block;
                 width: 60%;
                 margin-left: 12px;
                 vertical-align: top;
+
                 @media screen and (max-width: 766px) {
                     display: block;
                     width: 100%;
                 }
+
                 p {
                     font-size: 1.2rem;
+
                     @media screen and (max-width: 766px) {
                         font-size: 1.2rem;
                     }
+
                     @media screen and (max-width:320px) {
                         font-size: .85rem;
                     }
@@ -109,12 +126,15 @@
             }
         }
     }
+
     .box h2 {
         font-size: 2.5rem;
     }
+
     .box img {
         max-width: 300px;
     }
+
     .box2 {
         position: relative;
         width: 100%;
@@ -123,33 +143,40 @@
         z-index: 32px;
         padding: 24px;
         background: rgba($color: white, $alpha: .01);
+
         @media screen and (max-width: 766px) {
             padding: 62px 16px;
         }
+
         .cardo {
             width: 100%;
             margin-bottom: 36px;
             position: relative;
+
             @media screen and (max-width: 766px) {
                 margin-bottom: 32px;
             }
+
             .img {
                 position: absolute;
                 right: -36px;
                 top: -36px;
                 width: 120px;
                 height: 120px;
+
                 @media screen and (max-width: 766px) {
                     right: -16px;
                     width: 90px;
                     height: 90px;
                 }
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                 }
             }
+
             .title {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 2rem;
@@ -168,18 +195,22 @@
                 height: 50px;
                 text-align: center;
             }
+
             .content {
                 background: rgba(#094d94, 1);
                 border-radius: 16px;
                 padding: 16px 100px 16px 32px;
                 color: #fff;
+
                 // border: 2px solid white;
                 @media screen and (max-width: 766px) {
                     padding: 16px 72px 16px 32px
                 }
+
                 p {
                     font-size: 1.2rem;
                     margin-bottom: 0;
+
                     @media screen and (max-width: 766px) {
                         font-size: 1.2rem;
                     }
@@ -187,6 +218,7 @@
             }
         }
     }
+
     .box2 h2 {
         font-size: 2.5rem;
         color: #fff;
@@ -194,6 +226,6 @@
 }
 
 .helping-hidden {
-    height: 0;
+    // height: 0;
     // display: none;
 }
