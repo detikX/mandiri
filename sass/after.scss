@@ -103,9 +103,12 @@
             .content {
                 color: #fafafa;
                 display: inline-block;
+                background: #094d94;
                 width: 60%;
+                padding: 12px;
                 margin-left: 12px;
                 vertical-align: top;
+                border-radius: 8px;
 
                 @media screen and (max-width: 766px) {
                     display: block;
@@ -114,6 +117,7 @@
 
                 p {
                     font-size: 1.2rem;
+                    margin-bottom: 0;
 
                     @media screen and (max-width: 766px) {
                         font-size: 1.2rem;
