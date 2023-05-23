@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "Aeonik Medium";
+    src: url('../fonts/Aeonik-Medium.woff2');
+    src: url('../fonts/Aeonik-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Aeonik Regular";
+    src: url('../fonts/Aeonik-Regular.woff2');
+    src: url('../fonts/Aeonik-Regular.woff2') format('woff2');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body,
+main {
+    // font-family: 'Aeonik Regular', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+    // @media screen and (max-width: 766px) {
+    //     overflow-x: hidden;
+    // }
+}
+
+.firstletter {
+    &::first-letter {
+        float: left;
+        font-weight: bold;
+        margin-right: 8px;
+        font-size: 60px;
+        font-size: 6rem;
+        line-height: 40px;
+        line-height: 4rem;
+        height: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+.slick {
+    &-slide {
+        margin: 0 16px;
+    }
+    &-list {
+        margin: 0 -16px;
+    }
+    &-next,
+    &-prev {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        width: 42px;
+        background: rgba(#87c3d3, .6);
+        // backdrop-filter: blur(2px);
+        height: 42px;
+        border-radius: 50%;
+        &:hover,
+        &:focus,
+        &:active {
+            background: rgba(#87c3d3, .8);
+        }
+        &::before {
+            font-family: "FontAwesome";
+            z-index: 99;
+            // color: rgba($color: #000000, $alpha: 0.8);
+            color: white;
+        }
+    }
+    &-next {
+        right: -16px;
+        // left: 0;
+        // left: -15%;
+        z-index: 9;
+        // transform: translate(-100%, 0%);
+        &::before {
+            content: "\f054";
+        }
+    }
+    &-prev {
+        // left: -20%;
+        left: -16px;
+        z-index: 9;
+        // transform: translate(-100%, 0%);
+        &::before {
+            content: "\f053";
+        }
+    }
+    &-dots {
+        li {
+            button {
+                &::before {
+                    // color: #fff;
+                    font-size: 39px;
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    // background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.isdesktop {
+    display: block;
+    @media screen and (max-width: 766px) {
+        display: none;
+    }
+}
+
+.ismobile {
+    display: none;
+    @media screen and (max-width: 766px) {
+        display: block;
+    }
+}
+
+#nav {
+    background: rgba(0, 120, 130, 0.5) !important;
+    z-index: 99 !important;
+    backdrop-filter: blur(11px);
+    @media screen and (max-width: 766px) {
+        backdrop-filter: initial;
+    }
+}
+
+.share_icon>a {
+    padding: 0;
+}
+
+#share {
+    z-index: 108;
+}
+
+.share_icon>a i {
+    font-size: 25px;
+    line-height: initial;
+    @media screen and (max-width: 766px) {
+        font-size: 16px !important;
+        line-height: initial;
+    }
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+section {
+    // overflow-x: hidden;
+    padding: 32px 0;
+    min-height: 100vh;
+    position: relative;
+    // overflow: hidden;
+    z-index: 8;
+    p,
+    div {
+        font-size: 1.2rem;
+        @media screen and (max-width: 766px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.totop {
+    position: relative;
+    z-index: 88;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.bg-trsp-white {
+    background: rgba($color: white, $alpha: .07);
+    padding: 8px 16px;
+    border-radius: 8px;
+    p,
+    blockquote {
+        margin-bottom: 0;
+        color: white;
+    }
+}
+
+.titlex {
+    font-family: 'Aeonik Medium', sans-serif;
+    font-weight: 700;
+    color: white;
+    // letter-spacing: 2px;
+    font-size: 3.5rem;
+    // text-shadow: 2px 2px $yellow;
+    line-height: 4rem;
+    @media screen and (max-width: 766px) {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+}
+
+.highlights {
+    color: $yellow;
+    font-weight: 700;
+}
+
+.headerpp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 102;
+    left: 0;
+    height: 56px;
+    display: none;
+    width: 100%;
+    background: black;
+}
+
+.footerm {
+    // display: none;
+    @media screen and (max-width: 766px) {
+        position: fixed;
+        height: 46px;
+        width: 100%;
+        background: #bbb;
+        z-index: 999;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.test-sticky {
+    position: sticky;
+    top: 56px;
+    @media screen and (max-width: 766px) {
+        margin-bottom: 24px;
+        top: 0;
+        text-align: center;
+    }
+    // z-index: 90;
+}
+
+.font-in {
+    @media screen and(max-width: 766px) {
+        font-size: 1.9rem;
+    }
+}
