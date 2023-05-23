@@ -154,6 +154,7 @@ section {
     padding: 32px 0;
     min-height: 100vh;
     position: relative;
+    background: $white;
     // overflow: hidden;
     z-index: 8;
     p,
@@ -270,5 +271,30 @@ section {
 .font-in {
     @media screen and(max-width: 766px) {
         font-size: 1.9rem;
+    }
+}
+
+.title__cek {
+    background: linear-gradient(to right, #043262, $darkblue);
+    width: fit-content;
+    color: white;
+    padding: 8px 16px;
+    position: relative;
+    border-radius: 8px;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     right: -40px;
+    //     width: 0;
+    //     top: 0;
+    //     height: 0;
+    //     // border-radius: 20px;
+    //     border-top: 30px solid transparent;
+    //     border-left: 40px solid $darkblue;
+    //     border-bottom: 30px solid transparent;
+    // }
+    h2 {
+        margin-bottom: 0;
+        font-size: 2.3rem;
     }
 }

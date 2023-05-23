@@ -1,5 +1,5 @@
 .pembukaan {
-    background: #f8f8f8;
+    background: $white;
     color: white;
     // min-height: auto;
     position: relative;
@@ -95,9 +95,9 @@
         inset: 0;
         width: 100%;
         height: 100%;
-        opacity: .1;
+        opacity: .3;
         @media screen and (max-width: 766px) {
-            opacity: .15;
+            opacity: .2;
         }
         &::after {
             content: "";
@@ -148,20 +148,33 @@
     font-weight: 700;
 }
 
-.foto-wash {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8, .7), #f8f8f8);
-    }
-    img {
+// .foto-wash {
+//     position: absolute;
+//     inset: 0;
+//     width: 100%;
+//     height: 100%;
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         inset: 0;
+//         background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8, .5), #f8f8f8);
+//     }
+//     img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+// }
+.lala {
+    position: relative;
+    .img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        margin: 32px auto;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
