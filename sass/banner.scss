@@ -12,23 +12,63 @@
     width: 100vw;
     // background: $mandiri;
     // overflow-x: hidden;
-    background: $four;
+    // background: $one;
+    background: white;
     height: 100%;
     padding: 0;
     z-index: 9;
     position: relative;
-
-    .img {
+    .ilus {
+        // content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
         height: auto;
-
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .img {
+        width: 50vw;
+        height: auto;
+        z-index: 21;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media screen and (max-width: 766px) {
+            width: 100%;
+            bottom: 90px;
+        }
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
+    .bola {
+        position: absolute;
+        &-pink {
+            right: -44px;
+            top: 30vh;
+            width: 150px;
+            border-radius: 50%;
+            height: 150px;
+            // background: #f7e3e8;
+            background: #e3eef7;
+        }
+        &-hijau {
+            left: -32px;
+            top: 52px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #dcf8f4;
+        }
+    }
     &__test {
         position: absolute;
         right: 10vw;
@@ -36,19 +76,15 @@
         width: 550px;
         z-index: 10;
         height: auto;
-
         @keyframes MoveUpDown {
-
             0%,
             100% {
                 right: 0px;
             }
-
             50% {
                 right: 16px;
             }
         }
-
         .bu {
             position: absolute;
             // animation: MoveUpDown 1s linear infinite;
@@ -58,19 +94,16 @@
             bottom: 5vh;
             width: 100%;
             height: 420px;
-
             &.animation-one {
                 animation: MoveUpDown 1.5s linear infinite;
                 right: 0;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         @media screen and (max-width: 766px) {
             width: 90vw;
             top: initial;
@@ -78,19 +111,16 @@
             right: initial;
             left: 8px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     &__title {
         position: absolute !important;
         left: 5vw;
         top: 15vh;
-
         @media screen and (max-width: 766px) {
             // top: initial;
             // bottom: 30vh;
@@ -100,7 +130,6 @@
             width: 100%;
             transform: translate(-50%, 0%);
         }
-
         h2 {
             color: white;
             // font-family: 'Kanit';
@@ -109,73 +138,66 @@
             text-shadow: 2px 2px black;
             line-height: 7rem;
             font-weight: 700;
-
+            // font-size: 7rem;
             @media screen and (max-width: 766px) {
                 line-height: 3rem;
             }
-
             // font-size: 3.5rem;
             &.first {
-                font-size: 5.5rem;
-                // color: #30abfc;
-                color: white;
-
+                font-size: 3.7rem;
+                color: #0a3b6a;
+                line-height: 4rem;
+                text-shadow: 2px 2px #ccc;
                 @media screen and (max-width: 766px) {
-                    font-size: 2.2rem;
+                    font-size: 2.7rem;
                     line-height: 3rem;
                     margin-bottom: 0;
                 }
             }
-
             &.second {
                 font-size: 6rem;
                 // color: #30abfc;
                 color: $yellow;
-                line-height: 6rem;
-
+                line-height: 6.5rem;
                 @media screen and (max-width: 766px) {
-                    font-size: 3rem;
-                    line-height: 3rem;
+                    font-size: 3.3rem;
+                    line-height: 3.3rem;
                     margin-bottom: 0;
                 }
             }
-
             &.third {
-                font-size: 6.5rem;
+                font-size: 10.5rem;
                 color: #f7bb2e;
-
+                line-height: 8rem;
+                letter-spacing: 2rem;
                 // color: white;
                 @media screen and (max-width: 766px) {
-                    font-size: 3.5rem;
-                    line-height: 3rem;
+                    font-size: 3.8rem;
+                    line-height: 3.9rem;
                     margin-bottom: 0;
+                    letter-spacing: normal;
                 }
             }
         }
     }
-
     &__img {
         width: 100%;
         opacity: .4;
         height: 100%;
         position: absolute;
         inset: 0;
-
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, $darkblue, rgba($darkblue, .7));
-
             @media screen and (max-width: 766px) {
                 background: linear-gradient(to top, rgba($darkblue, 1), rgba($darkblue, .5));
             }
         }
-
         @media screen and (max-width:766px) {
             height: 100vh;
         }
-
         img {
             width: 100%;
             height: 100%;
