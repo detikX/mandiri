@@ -1,13 +1,3 @@
-.help-texts {
-    @media screen and (max-width: 766px) {
-        transform: translate(-50%, -50%);
-        position: absolute;
-        left: 35%;
-        top: 35%;
-        z-index: 20;
-    }
-}
-
 .banner {
     width: 100vw;
     // background: $mandiri;
@@ -151,8 +141,8 @@
                 line-height: 4rem;
                 text-shadow: 2px 2px #ccc;
                 @media screen and (max-width: 766px) {
-                    font-size: 2.7rem;
-                    line-height: 3rem;
+                    font-size: 2.3rem;
+                    line-height: 2.5rem;
                     margin-bottom: 0;
                 }
             }
