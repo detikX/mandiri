@@ -1,10 +1,11 @@
 .pembukaan {
-    background: $darkblue;
+    background: $one;
     color: white;
     // min-height: auto;
     position: relative;
     // padding: 72px 0 32px;
     z-index: 12;
+    color: #423939;
     font-family: 'Red Hat Display', sans-serif;
     @media screen and (max-width: 766px) {
         padding: 80px 0 145px;
