@@ -51,6 +51,7 @@
     }
     .bola {
         position: absolute;
+        z-index: 1;
         &-pink {
             right: -44px;
             top: 30vh;
@@ -120,6 +121,7 @@
     &__title {
         position: absolute !important;
         left: 5vw;
+        z-index: 6;
         top: 15vh;
         @media screen and (max-width: 766px) {
             // top: initial;
@@ -190,9 +192,9 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, rgba($darkblue, .7));
+            background: linear-gradient(to top, $one, rgba($one, .7));
             @media screen and (max-width: 766px) {
-                background: linear-gradient(to top, rgba($darkblue, 1), rgba($darkblue, .5));
+                background: linear-gradient(to top, rgba($one, 1), rgba($one, .5));
             }
         }
         @media screen and (max-width:766px) {
