@@ -1,5 +1,5 @@
 .pembukaan {
-    background: $one;
+    background: #f8f8f8;
     color: white;
     // min-height: auto;
     position: relative;
@@ -10,10 +10,10 @@
     @media screen and (max-width: 766px) {
         padding: 80px 0 145px;
     }
-    .test {
-        position: sticky;
-        top: 20px;
-    }
+    // .test {
+    //     position: sticky;
+    //     top: 20px;
+    // }
     .anim-1 {
         position: absolute;
         left: 5vw;
@@ -103,7 +103,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, transparent, $darkblue);
+            background: linear-gradient(to top, #f8f8f8, transparent, #f8f8f8);
         }
         img {
             width: 100%;

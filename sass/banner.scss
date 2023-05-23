@@ -8,6 +8,15 @@
     padding: 0;
     z-index: 9;
     position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 120px;
+        background: linear-gradient(to top, #f8f8f8, transparent);
+    }
     .ilus {
         // content: "";
         position: absolute;
