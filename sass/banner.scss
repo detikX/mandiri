@@ -9,6 +9,31 @@
     z-index: 9;
     position: relative;
 
+    #animations-example-4 {
+        height: 200px;
+        max-width: 300px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    #animations-example-4 tbody td {
+        transform-origin: bottom;
+        animation: revealing-bars 4s linear infinite;
+    }
+
+    @keyframes revealing-bars {
+        0% {
+            transform: scaleY(0);
+        }
+
+        15% {
+            transform: scaleY(1);
+        }
+    }
+
     &::after {
         content: "";
         position: absolute;
