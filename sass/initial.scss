@@ -296,9 +296,9 @@ section {
 }
 
 .title__cek {
-    background: linear-gradient(to right, #043262, $darkblue);
+    // background: linear-gradient(to right, #043262, $darkblue);
     width: fit-content;
-    color: white;
+    color: $mandiri;
     padding: 8px 16px;
     margin: 0 auto;
     text-align: center;
@@ -307,6 +307,9 @@ section {
 
     h2 {
         margin-bottom: 0;
-        font-size: 2.3rem;
+        font-size: 3rem;
+        @media screen and (max-width:766px) {
+            font-size: 2rem;
+        }
     }
 }
