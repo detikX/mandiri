@@ -33,7 +33,7 @@ function animateValue(obj, start, end, duration) {
 }
 
 const obj = document.getElementById("value");
-animateValue(obj, 1500, 2023, 4500);
+animateValue(obj, 1500, 2023, 2000);
 
 $(".category-airline").click(function () {
     var id = $(this).attr("id");
