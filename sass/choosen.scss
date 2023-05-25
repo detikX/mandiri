@@ -1,6 +1,9 @@
-.choosen,.pembukaan {
+.choosen,
+.pembukaan {
+    
+
     .click {
-        background: linear-gradient(45deg,  $mandiri 75%,#f4af3c) !important;
+        background: linear-gradient(45deg, $mandiri 75%, #f4af3c) !important;
         // color: #f4af3c;
         color: white;
         text-align: center;
@@ -13,15 +16,18 @@
         transition: .3s;
         margin-bottom: 16px;
         box-shadow: 2px 3px 4px #ccc;
+
         @media screen and (max-width:766px) {
             padding: 8px;
             color: #f8f8f8;
             height: fit-content;
             font-size: 1.3rem;
-            background: linear-gradient(45deg,  $mandiri ,black) !important;
+            background: linear-gradient(45deg, $mandiri, black) !important;
         }
+
         &:hover {
-            color: #f4af3c
+            color: #f4af3c;
+            background: linear-gradient(45deg, $mandiri 75%, #f1aa2e) !important;
         }
     }
 }

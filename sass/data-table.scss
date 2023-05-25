@@ -1,5 +1,20 @@
 .data-table {
     position: relative;
+    .closer {
+        margin: 0 auto;
+        text-align: center;
+        background: $mandiri;
+        width: fit-content;
+        padding: 4px 16px;
+        border-radius: 16px;
+        color: $yellow;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+        &:hover {
+            color: white;
+        }
+    }
     &.airline-content {
         display: none;
     }
