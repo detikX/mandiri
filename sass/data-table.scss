@@ -16,7 +16,7 @@
         }
     }
     &.airline-content {
-        display: none;
+        // display: none;
     }
     .open {
         display: block;
@@ -41,10 +41,12 @@
       }
     .kotak {
         position: absolute;
-        inset: 0;
+        // inset: 0;
+        right: 0;
+        top: 0;
         // display: none;
-        width: 100%;
-        height: 100vh;
+        width: 30vw;
+        height: auto;
         opacity: .5;
         z-index: 2;
         &::before {
@@ -56,20 +58,19 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
     h4 {
         margin-bottom: 0;
         font-weight: bold;
-        color: gray;
+        color: #494949;
+        font-size: 1.2rem;
         width: fit-content;
         padding: 4px;
-        // background: $yellow;
-        margin: 0 auto;
-        border-bottom: 2px solid;
-        // color: $darkblue;
+        /* margin: 0 auto; */
+        // /* border-bottom: 2px solid;
     }
 
     // overflow: scroll;
@@ -196,10 +197,10 @@
 .h3 {
     // color: #14477b;
     font-weight: bold;
-    background: #fedc8c;
+    // background: #fedc8c;
     width: fit-content;
     margin: 0 auto;
-    color: #776633;
+    color: $mandiri;
     padding: 8px;
     font-size: 1.5rem;
     border-radius: 8px;
@@ -210,7 +211,7 @@
         // background: #f7bb2e;
         width: fit-content;
         padding: 8px;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         border-radius: 8px;
     }
 }
