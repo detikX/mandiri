@@ -9,9 +9,14 @@
             font-size: 1.8rem;
             font-weight: 700;
             color: $darkblue;
+            display: inline;
         }
         .fawe {
             color: green;
+            display: inline;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-left: 8px;
         }
         border-bottom: 1px dashed;
         padding: 4px 0;
@@ -23,9 +28,25 @@
         margin-bottom: 16px;
         // box-shadow: 1px 2px 4px #ccc;
         border-radius: 8px;
+        .datas {
+            display: block;
+            &-left {
+                display: inline-block;
+                width: 40%;
+                vertical-align: middle;
+            }
+            &-right {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 1rem;
+                width: 55%;
+            }
+        }
         .titled {
+            width: auto;
             font-weight: 700;
-            font-size: 1.6rem;
+            text-align: center;
+            font-size: 2rem;
             color: $mandiri;
         }
         p {
