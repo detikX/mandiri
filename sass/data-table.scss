@@ -5,8 +5,11 @@
         inset: 0;
         width: 100%;
         height: 100%;
-        opacity: .15;
+        opacity: .1;
         z-index: 2;
+        @media screen and (max-width: 766px) {
+            opacity: .08;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -31,29 +34,27 @@
     &.airline-content {
         display: none;
     }
-
-   
     .open {
         display: block;
         animation: showup 0.8s ease-in-out;
-      }
-      @keyframes showup {
+    }
+    @keyframes showup {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
         30% {
-          opacity: 0.1;
+            opacity: 0.1;
         }
         50% {
-          opacity: 0.2;
+            opacity: 0.2;
         }
         70% {
-          opacity: 0.6;
+            opacity: 0.6;
         }
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
     .kotak {
         position: absolute;
         // inset: 0;
@@ -76,7 +77,6 @@
             object-fit: contain;
         }
     }
-
     h4 {
         margin-bottom: 0;
         font-weight: bold;
@@ -87,22 +87,18 @@
         /* margin: 0 auto; */
         // /* border-bottom: 2px solid;
     }
-
     // overflow: scroll;
     .kotaksa {
         .img {
             width: 100%;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 width: 100%;
             }
-
             img {
                 width: 100%;
                 height: auto;
                 object-fit: contain;
-
-                @media screen and (max-width:766px) {
+                @media screen and (max-width: 766px) {
                     width: 100%;
                     height: auto;
                     object-fit: contain;
@@ -110,49 +106,38 @@
             }
         }
     }
-
     .kotaks {
         width: 100%;
-
         .img {
             width: 100%;
             margin: 32px auto;
-
             height: auto;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 width: 200%;
-
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         @media screen and (max-width:766px) {
             overflow-x: scroll;
-
         }
     }
-
     table {
+        backdrop-filter: blur(3px);
         // background: rgba($yellow, .1);
         strong {
             color: $mandiri;
         }
     }
-
-    
     thead {
         tr {
             td {
                 font-size: 1rem;
                 // background: $one;
                 font-weight: bold;
-    
                 &:nth-child(2),
                 &:nth-child(3),
                 &:nth-child(4),
@@ -162,15 +147,12 @@
             }
         }
     }
-    
     tbody.cek {
         tr {
             td {
-    
                 &:nth-child(2) {
                     font-size: 1rem;
                 }
-    
                 &:nth-child(3),
                 &:nth-child(4),
                 &:nth-child(5) {
@@ -178,35 +160,29 @@
                 }
             }
         }
-    
-    
     }
-
-    tbody,thead {
-        td{
+    tbody,
+    thead {
+        td {
             &:first-child {
                 text-align: left;
-                
             }
         }
     }
-
     .rightxs {
-       text-align: right;
-       td{
-        &:first-child {
-            text-align: left;
-            @media screen and (max-width:766px) {
+        text-align: right;
+        td {
+            &:first-child {
                 text-align: left;
-                // background: red;
-                width: 240px;
-                display: block;
+                @media screen and (max-width: 766px) {
+                    text-align: left;
+                    // background: red;
+                    width: 240px;
+                    display: block;
+                }
             }
         }
     }
-       
-    }
-
 }
 
 .h3 {
@@ -219,8 +195,7 @@
     padding: 8px;
     font-size: 1.5rem;
     border-radius: 8px;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         // color: #14477b;
         // font-weight: 400;
         // background: #f7bb2e;
