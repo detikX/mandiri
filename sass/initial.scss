@@ -47,11 +47,9 @@ main {
     &-slide {
         margin: 0 16px;
     }
-
     &-list {
         margin: 0 -16px;
     }
-
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, 0.5);
@@ -60,13 +58,11 @@ main {
         // backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
-
         &:hover,
         &:focus,
         &:active {
             background: rgba(#87c3d3, .8);
         }
-
         &::before {
             font-family: "FontAwesome";
             z-index: 99;
@@ -74,30 +70,25 @@ main {
             color: white;
         }
     }
-
     &-next {
         right: -16px;
         // left: 0;
         // left: -15%;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f054";
         }
     }
-
     &-prev {
         // left: -20%;
         left: -16px;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f053";
         }
     }
-
     &-dots {
         li {
             button {
@@ -116,7 +107,6 @@ main {
 
 .isdesktop {
     display: block;
-
     @media screen and (max-width: 766px) {
         display: none;
     }
@@ -124,7 +114,6 @@ main {
 
 .ismobile {
     display: none;
-
     @media screen and (max-width: 766px) {
         display: block;
     }
@@ -134,7 +123,6 @@ main {
     background: rgba(0, 120, 130, 0.5) !important;
     z-index: 99 !important;
     backdrop-filter: blur(11px);
-
     @media screen and (max-width: 766px) {
         backdrop-filter: initial;
     }
@@ -151,7 +139,6 @@ main {
 .share_icon>a i {
     font-size: 25px;
     line-height: initial;
-
     @media screen and (max-width: 766px) {
         font-size: 16px !important;
         line-height: initial;
@@ -171,11 +158,9 @@ section {
     background: $white;
     // overflow: hidden;
     z-index: 8;
-
     p,
     div {
         font-size: 1.2rem;
-
         @media screen and (max-width: 766px) {
             font-size: 1.2rem;
         }
@@ -220,7 +205,6 @@ section {
     background: rgba($color: white, $alpha: .07);
     padding: 8px 16px;
     border-radius: 8px;
-
     p,
     blockquote {
         margin-bottom: 0;
@@ -236,7 +220,6 @@ section {
     font-size: 3.5rem;
     // text-shadow: 2px 2px $yellow;
     line-height: 4rem;
-
     @media screen and (max-width: 766px) {
         font-size: 2.2rem;
         line-height: 2.4rem;
@@ -261,7 +244,6 @@ section {
 }
 
 .footerm {
-
     // display: none;
     @media screen and (max-width: 766px) {
         position: fixed;
@@ -279,13 +261,11 @@ section {
 .test-sticky {
     position: sticky;
     top: 56px;
-
     @media screen and (max-width: 766px) {
         margin-bottom: 24px;
         top: 0;
         text-align: center;
     }
-
     // z-index: 90;
 }
 
@@ -316,9 +296,9 @@ section {
         height: auto;
         z-index: 2;
         width: 320px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 100px;
-            left: 44px;
+            left: -44px;
         }
         img {
             width: 100%;
@@ -326,11 +306,10 @@ section {
             object-fit: contain;
         }
     }
-
     h2 {
         margin-bottom: 0;
         font-size: 3.3rem;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             font-size: 1.8rem;
         }
     }
