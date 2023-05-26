@@ -326,6 +326,8 @@
     tbody,
     thead {
         td {
+            padding: .5rem;
+            font-size: .85rem;
             &:first-child {
                 text-align: left;
             }
