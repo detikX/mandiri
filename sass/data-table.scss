@@ -22,6 +22,8 @@
         background: $mandiri;
         width: fit-content;
         padding: 4px 16px;
+        position: relative;
+        z-index: 65;
         border-radius: 16px;
         color: $yellow;
         font-weight: bold;
