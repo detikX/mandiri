@@ -7,11 +7,10 @@
     z-index: 12;
     color: #302b2b;
     font-family: 'Red Hat Display', sans-serif;
-  
     .wrap-orang {
         // height: 50vh;
         display: none;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             display: block;
             height: 50vh;
             position: absolute;
@@ -21,11 +20,11 @@
             width: 100vw;
         }
         &::before {
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 content: "";
                 position: absolute;
                 inset: 0;
-                background: linear-gradient(to top,#f8f8f8, transparent);
+                background: linear-gradient(to top, #f8f8f8, transparent);
             }
         }
         img {
@@ -60,7 +59,6 @@
             }
         }
     }
-
     .awan {
         position: absolute;
         left: 10vw;
@@ -77,7 +75,6 @@
     @media screen and (max-width: 766px) {
         padding: 80px 0 145px;
     }
-
     // .test {
     //     position: sticky;
     //     top: 20px;
@@ -88,55 +85,46 @@
         bottom: 35vh;
         width: auto;
         height: auto;
-
         @media screen and (max-width: 766px) {
             bottom: 5vh;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .anim-3 {
         position: absolute;
         left: 5vw;
         top: 5vh;
         width: auto;
         height: auto;
-
         @media screen and (max-width: 766px) {
             top: 0;
             left: 3vw;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .anim-5 {
         position: absolute;
         right: 5vw;
         top: 5vh;
         width: auto;
         height: auto;
-
         @media screen and (max-width: 766px) {
             top: 0;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .dots {
         position: absolute;
         right: 10vw;
@@ -144,26 +132,22 @@
         width: 180px;
         opacity: 1;
         height: auto;
-
         @media screen and (max-width: 766px) {
             bottom: 10vh;
             width: 90px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .hp {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 320px;
         height: auto;
-
         // opacity: ;
         img {
             width: 100%;
@@ -171,7 +155,6 @@
             object-fit: contain;
         }
     }
-
     .kertas {
         position: absolute;
         inset: 0;
@@ -181,24 +164,21 @@
         @media screen and (max-width: 766px) {
             opacity: .2;
         }
-
         &::after {
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8,.8), #f8f8f8);
-            @media screen and (max-width:766px) {
-                background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8,.1), #f8f8f8);
+            background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8, .8), #f8f8f8);
+            @media screen and (max-width: 766px) {
+                background: linear-gradient(to top, #f8f8f8, rgba(#f8f8f8, .1), #f8f8f8);
             }
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     // &::before {
     //     content: "";
     //     position: absolute;
@@ -217,14 +197,12 @@
         right: 0;
         top: 0;
         opacity: .2;
-
         &::before {
             position: absolute;
             content: "";
             inset: 0;
             background: linear-gradient(to top, transparent, #002750);
         }
-
         img {
             width: 100%;
             height: 100%;
@@ -255,3 +233,6 @@
 //         object-fit: cover;
 //     }
 // }
+.blocking {
+    background: $yellow;
+}
