@@ -31,8 +31,22 @@
             color: white;
         }
     }
+    .wrappers {
+        width: 100%;
+        height: auto;
+        .cek1 {
+            width: 40%;
+            display: inline-block;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
     &.airline-content {
-        display: none;
+        // display: none;
     }
     .open {
         display: block;
