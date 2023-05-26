@@ -1,5 +1,37 @@
 .data-table {
     position: relative;
+    .to-center {
+        text-align: center;
+        h3 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $darkblue;
+        }
+        .fawe {
+            color: green;
+        }
+        border-bottom: 1px dashed;
+        padding: 4px 0;
+    }
+    .all-high {
+        // border: 1px solid $mandiri;
+        padding: 8px;
+        background: $one;
+        margin-bottom: 16px;
+        // box-shadow: 1px 2px 4px #ccc;
+        border-radius: 8px;
+        .titled {
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: $mandiri;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
     .bgbg {
         position: absolute;
         inset: 0;
