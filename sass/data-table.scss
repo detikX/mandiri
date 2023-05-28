@@ -88,12 +88,18 @@
         bottom: -100px;
         width: 236px;
         height: 200px;
+        @media screen and (max-width:766px) {
+            width: 180px;
+        }
         &::before {
             content: "";
             position: absolute;
             width: 234px;
             bottom: 0px;
             height: 196px;
+            @media screen and (max-width:766px) {
+                width: 178px;
+            }
             /* background: tan; */
             left: 0px;
             border: 2px solid #fff;
