@@ -1,5 +1,11 @@
 .data-table {
     position: relative;
+    small {
+        font-size: .8rem;
+        @media screen and (max-width: 766px) {
+            font-size: .6rem;
+        }
+    }
     .laba {
         background: $two;
         padding: 8px;
