@@ -40,7 +40,7 @@ $(".category-airline").click(function() {
     var toShow = "#show-" + id;
     // console.log(toShow);
     $(".airline-content").not(toShow).hide();
-    $(toShow).fadeIn('fast');
+    $(toShow).fadeIn(200);
     $(".twox").show();
     AOS.refresh();
     if ($(".detail-refund").children().hasClass("open")) {
