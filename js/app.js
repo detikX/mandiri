@@ -38,9 +38,9 @@ animateValue(obj, 1500, 2023, 2000);
 $(".category-airline").click(function() {
     var id = $(this).attr("id");
     var toShow = "#show-" + id;
-    console.log(toShow);
+    // console.log(toShow);
     $(".airline-content").not(toShow).hide();
-    $(toShow).fadeIn("slow");
+    $(toShow).fadeIn('fast');
     $(".twox").show();
     AOS.refresh();
     if ($(".detail-refund").children().hasClass("open")) {
@@ -49,19 +49,22 @@ $(".category-airline").click(function() {
                 scrollTop: $(".refund").offset().top + 20
             });
         });
-        console.log("harus fade")
+        // console.log("harus fade")
     }
 
     if ($(".detail-refund").children().hasClass("close-info")) {
-        $(toShow)
-            .removeClass("close-info")
-            .addClass("open")
-            .slideDown(function() {
-                $("html, body").animate({
-                    scrollTop: $(".refund").offset().top + 20,
-                });
-            });
-        console.log("harus slide");
+        setTimeout(() => {
+                $(toShow)
+                    .removeClass("close-info")
+                    .addClass("open")
+                    .slideDown(function() {
+                        $("html, body").animate({
+                            scrollTop: $(".refund").offset().top + 20,
+                        });
+                    });
+
+            }, 500)
+            // console.log("harus slide");
     }
 
     $('.detail-refund ul li.category-detail').removeClass("activeMenu");
