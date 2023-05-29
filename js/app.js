@@ -46,7 +46,7 @@ $(".category-airline").click(function() {
     if ($(".detail-refund").children().hasClass("open")) {
         $(toShow).removeClass("open").addClass("close-info").slideDown(function() {
             $('html, body').animate({
-                scrollTop: $(".refund").offset().top + 20
+                scrollTop: $(".refund").offset().top - 60
             });
         });
         // console.log("harus fade")
@@ -59,7 +59,7 @@ $(".category-airline").click(function() {
                     .addClass("open")
                     .slideDown(function() {
                         $("html, body").animate({
-                            scrollTop: $(".refund").offset().top + 20,
+                            scrollTop: $(".refund").offset().top - 60,
                         });
                     });
 
