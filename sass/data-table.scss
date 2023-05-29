@@ -3,7 +3,9 @@
     .laba {
         background: $two;
         padding: 8px;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
+        margin: 0 auto 24px;
+        width: fit-content;
         border-radius: 16px;
         box-shadow: 1px 2px 3px #bbb;
         h3 {
@@ -88,7 +90,7 @@
         bottom: -100px;
         width: 236px;
         height: 200px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 180px;
         }
         &::before {
@@ -97,7 +99,7 @@
             width: 234px;
             bottom: 0px;
             height: 196px;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 width: 178px;
             }
             /* background: tan; */
@@ -108,7 +110,7 @@
     .all-high {
         // border: 1px solid $mandirkmopo-i;
         padding: 0 8px;
-         background: $one;
+        background: $one;
         margin-bottom: 16px;
         // box-shadow: 1px 2px 4px #ccc;
         border-radius: 8px;
