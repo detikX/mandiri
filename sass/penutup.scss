@@ -5,12 +5,51 @@
     position: relative;
     color: #333;
     padding: 72px 0;
+    .bola {
+        position: absolute;
+        z-index: 1;
+        &-pink {
+            right: -44px;
+            top: 30vh;
+            width: 150px;
+            border-radius: 50%;
+            height: 150px;
+            // background: #f7e3e8;
+            background: #ffeeafbd;
+        }
+        &-hijau {
+            left: -32px;
+            top: 52px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #dcf8f496;
+        }
+    }
+    .sumbs {
+        // color: #e9a93a;
+        font-size: 1rem;
+        .f {
+            font-size: 1rem;
+            color: $mandiri;
+            font-weight: 700;
+        }
+    }
+    @media screen and (max-width: 766px) {
+        padding: 16px 0 72px;
+    }
     .img {
         position: absolute;
         inset: 0;
-        opacity: .1;
+        opacity: .2;
         width: 100%;
         height: auto;
+        &::before {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background: linear-gradient(to top, #ebebeb, transparent, #ebebeb);
+        }
         img {
             width: 100%;
             height: 100%;
