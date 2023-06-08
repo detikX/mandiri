@@ -81,7 +81,7 @@ $(".closer").click(() => {
     $(".airline-content") /*.fadeOut()*/
         .fadeOut();
     $("html, body").animate({
-        scrollTop: $(".contentx").offset().top + 20,
+        scrollTop: $(".contentx").offset().top - 60,
     })
 });
 
